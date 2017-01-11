@@ -1,8 +1,9 @@
 * {
   font-family: 'Roboto', sans-serif;
+  font-size: 1.1em;
 }
 body {
-  background-color: #B0B0B0;
+  background-color: rgba(#ffd2aa, 1);
 }
 
 .demo-layout-transparent {
@@ -15,6 +16,21 @@ body {
   color: white;
 }
 
-#linklist {
+.linklist {
   text-align: center;
+  padding-top:4%;
+  line-height: 200%;
+}
+
+.contact-div {
+  padding: 20px;
+}
+
+.gridback {
+  background-color: rgba(244, 183, 93, 0.78);
+}
+
+#codename {
+  color: gray;
+  font-size: 70%;
 }
