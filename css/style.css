@@ -27,7 +27,7 @@ body {
 
 #codename {
   color: gray;
-  font-size: 70%;
+  font-size: 85%;
 }
 
 .demo-card-wide.mdl-card {
@@ -41,4 +41,9 @@ body {
 }
 .demo-card-wide > .mdl-card__menu {
   color: #fff;
+}
+.material_menu .mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+  color: rgb(236, 106, 0);
 }
