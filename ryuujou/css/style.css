@@ -1,0 +1,49 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  background-color: #FEFEFE;
+}
+
+.linklist {
+  padding-top:4%;
+  line-height: 200%;
+  text-align: center;
+}
+
+.contact-div {
+  padding: 20px;
+}
+
+.aboutpage {
+  padding: 10% 10% 0 10%;
+  line-height: 200%;
+  text-align: center;
+}
+
+.gridback {
+  background-color: rgba(244, 183, 93, 0.78);
+}
+
+#codename {
+  color: gray;
+  font-size: 85%;
+}
+
+.demo-card-wide.mdl-card {
+  width: 512px;
+}
+.demo-card-wide > .mdl-card__title {
+  color: #FF;
+  height: 60px;
+  background-color: purple;
+  /*background: url('../assets/demos/welcome_card.jpg') center / cover;*/
+}
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
+}
+.material_menu .mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+  color: rgb(236, 106, 0);
+}
