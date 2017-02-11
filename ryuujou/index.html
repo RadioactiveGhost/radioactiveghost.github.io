@@ -4,12 +4,10 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
 
+    <link type="text/css" rel="stylesheet" href="css/ryuujou.css"/>
     <!--Set color for Google Chrome (for Android) header-->
     <meta name="theme-color" content=" #673ab7">
     <!--Let browser know website is optimized for mobile-->
@@ -21,32 +19,59 @@
 
   <body>
 
+
+
     <!--Navbar-->
     <header>
+      <ul id="settings" class="dropdown-content orange lighten-4">
+        <li>
+            <img src="img/Mahou.Shoujo.Madoka.jpg" style="width:350px;">
+          <span style="margin-top:-164px;">
+          <a href="#!user"><img class="circle" src="img/ookamisan-10-square.png" style="width:80px;"></a>
+          <a href="#!name"><span class="white-text name">RadioactiveGhost</span></a>
+          <a href="#!email"><span class="white-text email">radioactiveghost96@gmail.com</span></a></span>
+        </div></li>
+        <li><a href="#!" class="purple-text"><i class="material-icons left">settings</i>Settings</a></li>
+        <li><a href="#!" class="purple-text"><i class="material-icons left">info_outline</i>About</a></li>
+        <li class="divider"></li>
+        <li><a href="#!" class="purple-text"><i class="material-icons left">exit_to_app</i>Logout</a></li>
+      </ul>
 
       <nav class="nav">
         <div class="nav-wrapper deep-purple">
 
-          <a href="#!" class="brand-logo center">PurpleOrange</a>
+
+          <a href="index.html" class="brand-logo center active orange-text">PurpleOrange</a>
 
           <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 
           <ul class="right hide-on-med-and-down">
-            <li class="active"><a href="index.html"><i class="material-icons left">view_module</i>Home</a></li>
-            <li><a href="contacts.html"><i class="material-icons left">perm_identity</i>Contacts</a></li>
-            <li><a href="about.html"><i class="material-icons left">pages</i>Chat</a></li>
-            <li><a href="about.html"><i class="material-icons left">pages</i>Requests</a></li>
+            <li><a href="requests.html"><i class="material-icons left">info_outline</i></a></li>
+            <li><a href="about.html"><i class="material-icons left">chat_bubble_outline</i></a></li>
+            <li><a class="dropdown-button" href="#!" data-beloworigin="true" data-constrainWidth="false" data-activates="settings" style="padding:0px;margin:0px;"><img src="img/ookamisan-10-square.png" class="circle" style="height:60px;margin-bottom:-23px;"></a></li>
           </ul>
 
-          <ul class="side-nav deep-purple" id="mobile-demo">
-            <li class="active"><a href="index.html" class="grey-text text-lighten-4"><i class="material-icons left white-text">view_module</i>Hub</a></li>
-            <li><a href="contacts.html" class="grey-text text-lighten-4"><i class="material-icons left white-text">perm_identity</i>Contacts</a></li>
-            <li><a href="about.html" class="grey-text text-lighten-4"><i class="material-icons left white-text">pages</i>About</a></li>
+          <ul class="side-nav deep-purple lighten-3" id="mobile-demo">
+            <li><div class="userView">
+              <div class="background">
+                <img src="img/Mahou.Shoujo.Madoka.jpg">
+              </div>
+              <a href="#!user"><img class="circle" src="img/ookamisan-10-square.png"></a>
+              <a href="#!name"><span class="white-text name">RadioactiveGhost</span></a>
+              <a href="#!email"><span class="white-text email">radioactiveghost96@gmail.com</span></a>
+            </div></li>
+            <li><a href="contacts.html"><i class="material-icons left">perm_identity</i>Profile</a></li>
+            <li><a href="about.html"><i class="material-icons left">info_outline</i>Requests</a></li>
+            <li><a href="about.html"><i class="material-icons left">chat_bubble_outline</i>Chat</a></li>
+            <li><a href="about.html"><i class="material-icons left">settings</i>Settings</a></li>
+            <li><a href="about.html"><i class="material-icons left">exit_to_app</i>Logout</a></li>
           </ul>
         </div>
       </nav>
 
     </header>
+
+
 
     <!--Content-->
     <main>
@@ -55,8 +80,16 @@
     </main>
 
 
+
     <!--Footer-->
-    <footer>
+    <footer class="page-footer deep-purple">
+      <div class="container">
+        <div class="row">
+          <div class="col 16 s12">
+            <p class="grey-text text-lighten-4"></p>
+          </div>
+        </div>
+      </div>
 
     </footer>
 
@@ -64,9 +97,9 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script>
-      $( document ).ready(function(){
-
-      });
+    $( document ).ready(function(){
+      $(".button-collapse").sideNav();
+    });
     </script>
   </body>
 </html>
