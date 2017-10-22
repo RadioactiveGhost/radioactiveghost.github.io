@@ -738,11 +738,11 @@ left:20px !important;
 }
 
 .status-menu-container .status-menu .status-button.watching:hover {
-background-image:url(http://i.imgur.com/FxP6Shw.gif);
+background-image:url(http://i.imgur.com/z84uH8l.png);
 }
 
 .status-menu-container .status-menu .status-button.watching.on {
-background-image:url(http://i.imgur.com/FxP6Shw.gif);
+background-image:url(http://i.imgur.com/z84uH8l.png);
 }
 
 /* completed Madoka*/
@@ -753,11 +753,11 @@ left:30px !important;
 }
 
 .status-menu-container .status-menu .status-button.completed:hover {
-background-image:url(http://i.imgur.com/lsSov86.gif);
+background-image:url(http://i.imgur.com/YBmZ2dg.png);
 }
 
 .status-menu-container .status-menu .status-button.completed.on {
-background-image:url(http://i.imgur.com/lsSov86.gif);
+background-image:url(http://i.imgur.com/YBmZ2dg.png);
 }
 
 /* on-hold Sayaka*/
@@ -768,11 +768,11 @@ left:40px !important;
 }
 
 .status-menu-container .status-menu .status-button.onhold:hover {
-background-image:url(http://i.imgur.com/IP3n4Ab.gif);
+background-image:url(http://i.imgur.com/cr3RJbH.png);
 }
 
 .status-menu-container .status-menu .status-button.onhold.on {
-background-image:url(http://i.imgur.com/IP3n4Ab.gif);
+background-image:url(http://i.imgur.com/cr3RJbH.png);
 }
 
 /*dropped Mami*/
@@ -783,11 +783,11 @@ left:50px !important;
 }
 
 .status-menu-container .status-menu .status-button.dropped:hover {
-background-image:url(http://i.imgur.com/7uWoqYr.gif);
+background-image:url(http://i.imgur.com/5cGhAj.png);
 }
 
 .status-menu-container .status-menu .status-button.dropped.on {
-background-image:url(http://i.imgur.com/7uWoqYr.gif);
+background-image:url(http://i.imgur.com/5cGhAj.png);
 }
 
 /* plan to watch Kyouko*/
@@ -798,11 +798,11 @@ left:60px !important;
 }
 
 .status-menu-container .status-menu .status-button.plantowatch:hover {
-background-image:url(http://i.imgur.com/cqaTtlb.gif);
+background-image:url(http://i.imgur.com/dRZiwVr.png);
 }
 
 .status-menu-container .status-menu .status-button.plantowatch.on {
-background-image:url(http://i.imgur.com/cqaTtlb.gif);
+background-image:url(http://i.imgur.com/dRZiwVr.png);
 }
 
 
