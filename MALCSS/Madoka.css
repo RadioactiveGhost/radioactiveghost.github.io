@@ -839,7 +839,7 @@ background-image:url(http://i.imgur.com/dRZiwVr.png);
     opacity: 1
 }
 
-/* .status-menu-container .status-menu .status-button.watching:before, .status-menu-container .status-menu .status-button.reading:before {
+ .status-menu-container .status-menu .status-button.watching:before, .status-menu-container .status-menu .status-button.reading:before {
 content: "\f152\00a0\00a0";
 float: left;
 font-size: 1.5em;
@@ -879,7 +879,7 @@ content: "\f022\00a0";
 float: left;
 font-size: 1.5em;
 font-family: 'FontAwesome' !important;
-}*/
+}
 
 .status-menu-container .status-menu .status-button:after {display:none !important;}
 
