@@ -718,16 +718,16 @@ height: 15px;}
 /* status button */
 /* all_anime */
 .status-menu-container .status-menu .status-button.all_anime {
-background-image:url(http://i.imgur.com/S5IC2ph.gif);
+background-image:url(http://i.imgur.com/XNXjHB9.gif);
 left:10px;
 }
 
 .status-menu-container .status-menu .status-button.all_anime:hover {
-background-image:url(http://i.imgur.com/S5IC2ph.gif);
+background-image:url(http://i.imgur.com/XNXjHB9.gif);
 }
 
 .status-menu-container .status-menu .status-button.all_anime.on {
-background-image:url(http://i.imgur.com/S5IC2ph.gif);
+background-image:url(http://i.imgur.com/XNXjHB9.gif);
 }
 
 /* watching Homura*/
