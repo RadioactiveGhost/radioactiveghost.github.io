@@ -730,7 +730,7 @@ background-image:url(http://i.imgur.com/EtJcBLp.gif);
 background-image:url(http://i.imgur.com/EtJcBLp.gif);
 }
 
-/* watching */
+/* watching Homura*/
 
 .status-menu-container .status-menu .status-button.watching {
 background-image:url(http://i.imgur.com/fSdRIkm.png);
@@ -745,10 +745,10 @@ background-image:url(http://i.imgur.com/FxP6Shw.gif);
 background-image:url(http://i.imgur.com/FxP6Shw.gif);
 }
 
-/* completed */
+/* completed Madoka*/
 
 .status-menu-container .status-menu .status-button.completed {
-background-image:url(http://i.imgur.com/ig9avfe.png);
+background-image:url(http://i.imgur.com/DOx3j6x.png);
 left:30px !important;
 }
 
@@ -760,10 +760,10 @@ background-image:url(http://i.imgur.com/lsSov86.gif);
 background-image:url(http://i.imgur.com/lsSov86.gif);
 }
 
-/* on-hold */
+/* on-hold Sayaka*/
 
 .status-menu-container .status-menu .status-button.onhold {
-background-image:url(http://i.imgur.com/8UTci5J.png);
+background-image:url(http://i.imgur.com/70tutom.png);
 left:40px !important;
 }
 
@@ -775,10 +775,10 @@ background-image:url(http://i.imgur.com/IP3n4Ab.gif);
 background-image:url(http://i.imgur.com/IP3n4Ab.gif);
 }
 
-/*dropped */
+/*dropped Mami*/
 
 .status-menu-container .status-menu .status-button.dropped {
-background-image:url(http://i.imgur.com/VNXW5lR.png);
+background-image:url(http://i.imgur.com/L2Zorr7.png);
 left:50px !important;
 }
 
@@ -790,10 +790,10 @@ background-image:url(http://i.imgur.com/7uWoqYr.gif);
 background-image:url(http://i.imgur.com/7uWoqYr.gif);
 }
 
-/* plan to watch */
+/* plan to watch Kyouko*/
 
 .status-menu-container .status-menu .status-button.plantowatch {
-background-image:url(http://i.imgur.com/fYvwBVQ.png);
+background-image:url(http://i.imgur.com/Nus7mR2.png);
 left:60px !important;
 }
 
