@@ -839,47 +839,7 @@ background-image:url(http://i.imgur.com/dRZiwVr.png);
     opacity: 1
 }
 
- .status-menu-container .status-menu .status-button.watching:before, .status-menu-container .status-menu .status-button.reading:before {
-content: "\f152\00a0\00a0";
-float: left;
-font-size: 1.5em;
-font-family: 'FontAwesome' !important;
-}
 
-.status-menu-container .status-menu .status-button.completed:before {
-content: "\f05d\00a0\00a0";
-float: left;
-font-size: 1.5em;
-font-family: 'FontAwesome' !important;
-}
-
-.status-menu-container .status-menu .status-button.onhold:before {
-content: "\f017\00a0\00a0";
-float: left;
-font-size: 1.5em;
-font-family: 'FontAwesome' !important;
-}
-
-.status-menu-container .status-menu .status-button.plantowatch:before, .status-menu-container .status-menu .status-button.plantoread:before {
-content: "\f073\00a0\00a0";
-float: left;
-font-size: 1.5em;
-font-family: 'FontAwesome' !important;
-}
-
-.status-menu-container .status-menu .status-button.dropped:before {
-content: "\f00d\00a0\00a0";
-float: left;
-font-size: 1.5em;
-font-family: 'FontAwesome' !important;
-}
-
-.status-menu-container .status-menu .status-button.all_anime:before {
-content: "\f022\00a0";
-float: left;
-font-size: 1.5em;
-font-family: 'FontAwesome' !important;
-}
 
 .status-menu-container .status-menu .status-button:after {display:none !important;}
 
@@ -1436,68 +1396,6 @@ color: #fff !important;
 	background-color:transparent;
 }
 
-
-
-/*list status*/
-
-/* .list-table .list-table-data:hover .data.status.completed:before, .list-table .list-table-data:hover .data.status.reading:before, .list-table .list-table-data:hover .data.status.watching:before,.list-table .list-table-data:hover .data.status.plantoread:before, .list-table .list-table-data:hover .data.status.plantowatch:before,.list-table .list-table-data:hover .data.status.onhold:before,.list-table .list-table-data:hover .data.status.dropped:before */
-
-.list-table .list-table-data .data.status.completed:before, .list-table .list-table-data .data.status.reading:before, .list-table .list-table-data .data.status.watching:before,.list-table .list-table-data .data.status.plantoread:before, .list-table .list-table-data .data.status.plantowatch:before,.list-table .list-table-data .data.status.onhold:before,.list-table .list-table-data .data.status.dropped:before {
-height: 25px;
-width:25px !important;
-background-position:50% 50%;
-background-repeat: no-repeat;
-background-size:15px 17px;
-display: inline-block !important;
-position: relative;
-left: 25px !important;
-top: 0 !important;
-z-index: 10 !important;
-content: "";
-pointer-events: none;
-opacity: 1 !important; }
-
-.list-table .list-table-data .data.status.completed:before {
-/* background-color: #26448f !important; */
-color:#fff;
-content: "\f05d";
-font-size: 1.5em;
-line-height:25px;
-font-family: 'FontAwesome' !important;
-}
-
-.list-table .list-table-data .data.status.watching:before, .list-table .list-table-data .data.status.reading:before
-{
-	/*background-color: #2db039 !important;*/
-color:#fff;
-content: "\f008";
-font-size: 1.5em;
-line-height:25px;
-font-family: 'FontAwesome' !important;}
-
-.list-table .list-table-data .data.status.plantowatch:before, .list-table .list-table-data .data.status.plantoread:before
-{/*background-color: #c3c3c3 !important;*/
-color:#fff;
-content: "\f073";
-font-size: 1.5em;
-line-height:25px;
-font-family: 'FontAwesome' !important;}
-
-.list-table .list-table-data .data.status.onhold:before
-{/*background-color: #f1c83e !important;*/
-color:#fff;
-content: "\f017";
-font-size: 1.5em;
-line-height:25px;
-font-family: 'FontAwesome' !important;}
-
-.list-table .list-table-data .data.status.dropped:before
-{/*background-color: #a12f31 !important;*/
-color:#fff;
-content: "\f00d";
-font-size: 1.5em;
-line-height:25px;
-font-family: 'FontAwesome' !important;}
 
 
 .link.sort + a {display: none;} /* remove watch buttons */
