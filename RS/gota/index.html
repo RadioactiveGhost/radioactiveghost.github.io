@@ -47,38 +47,34 @@
           <div class="card-content">
 
             <div class="row">
-              <div class="col s12 ">
-                <div class="input-field">
+              <div class="col s6">
+                <div class="input-field inline">
                   <i class="material-icons prefix">euro_symbol</i>
                   <input id="priceperlitre" type="number" class="validate">
-                  <label for="priceperlitre">Preço do Combustível Por Litro</label>
+                  <label for="priceperlitre">Preço do Combustível</label>
                 </div>
               </div>
-            </div>
 
-            <div class="row">
-              <div class="col s12">
-                <div class="input-field">
+              <div class="col s6">
+                <div class="input-field inline">
                   <i class="material-icons prefix">local_gas_station</i>
                   <input id="averageconsumption" type="number" class="validate">
-                  <label for="averageconsumption">Média do Consumo do Carro</label>
+                  <label for="averageconsumption">Média de Consumo</label>
                 </div>
               </div>
             </div>
 
             <div class="row">
-              <div class="col s12">
-                <div class="input-field">
+              <div class="col s6">
+                <div class="input-field inline">
                   <i class="material-icons prefix">drive_eta</i>
                   <input id="travelleddistance" type="number" class="validate">
                   <label for="travelleddistance">Distância Percorrida</label>
                 </div>
               </div>
-            </div>
 
-            <div class="row">
-              <div class="col s12">
-                <div class="input-field">
+              <div class="col s6">
+                <div class="input-field inline">
                   <i class="material-icons prefix">group</i>
                   <input id="pricebyperson" type="number" class="validate">
                   <label for="pricebyperson">Número de Pessoas</label>
@@ -90,25 +86,26 @@
               <i class="material-icons right">send</i>
             </button>
 
+
+
             <div class="row">
-              <div class="col s12">
-                Total Gasto:
+              <div class="col s3 offset-s3">
                 <div class="input-field inline">
-                  <input id="totalspent" type="number" disabled>
-                  <label for="totalspent"></label>
-                </div><i class="material-icons">euro_symbol</i>
+                  <i class="material-icons prefix">euro_symbol</i>
+                  <input id="totalspent" type="number" class="validate" disabled>
+                  <span class="helper-text">Total</span>
+                </div>
+              </div>
+
+              <div class="col s3">
+                <div class="input-field inline">
+                  <i class="material-icons prefix">person</i>
+                  <input id="totalperperson" type="number" class="validate" disabled>
+                  <span class="helper-text">Por Pessoa</span>
+                </div>
               </div>
             </div>
 
-            <div class="row">
-              <div class="col s12">
-                Total Por Pessoa:
-                <div class="input-field inline">
-                  <input id="totalperperson" type="number" disabled>
-                  <label for="totalperperson"></label>
-                </div><i class="material-icons">euro_symbol</i>
-              </div>
-            </div>
 
           </div>
         </div>
