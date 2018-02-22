@@ -12,10 +12,14 @@ Enjoy responsibly!
 
 */
 
-$(document).ready(function() {
+/*$(document).ready(function() {
 
 	
 		$('body').addClass('loaded');
 	
 
-});
+});*/
+
+$(window).load(function() {
+          $('body').addClass('loaded');
+       });
