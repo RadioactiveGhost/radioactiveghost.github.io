@@ -9,43 +9,51 @@
   <link type="text/css" rel="stylesheet" href="sass/materialize.min.css" media="screen,projection" />
   <link type="text/css" rel="stylesheet" href="css/footer.css" media="screen,projection" />
   <link type="text/css" rel="stylesheet" href="css/preloader.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="css/darkswitch.css" media="screen,projection" />
 
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mogami CyberDouro</title>
-  <meta name="theme-color" content="#E53935">
+  <meta name="theme-color" content="#b71c1c">
   <style>
-      #loader-wrapper .loader-section {background:#E53935;}
+    #loader-wrapper .loader-section {
+      background: #b71c1c;
+    }
   </style>
 </head>
 
-<body>
+<body id="body" class="light-mode">
 
   <header>
-    <div id="loader-wrapper">
+    <!--<div id="loader-wrapper">
       <div id="loader"></div>
 
       <div class="loader-section section-left"></div>
             <div class="loader-section section-right"></div>
 
-    </div>
+    </div>-->
     <nav>
-      <div class="nav-wrapper">
-        <a href="cyberdouro.html" class="brand-logo center"><span style="font-size:15px;">diSer apresenta</span>&nbsp&nbsp CyberDouro &nbsp&nbsp<span style="font-size:15px;">gametechcon</span>&nbsp&nbsp&nbsp&nbsp&nbsp</a>
-
-        <ul id="slide-out" class="sidenav red darken-1">
+      <div class="nav-wrapper class=" dark-mode "">
+        <a href="cyberdouro.html" class="brand-logo center white-text"><span style="font-size:15px;">diSer apresenta</span>&nbsp&nbsp CyberDouro &nbsp&nbsp<span style="font-size:15px;">gametechcon</span>&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+        <ul class="right">
+          <li>
+            <a name="dark_light" onclick="toggleDarkLight()"><i class="material-icons dark-mode">brightness_2</i></a>
+          </li>
+          <li>&nbsp&nbsp&nbsp</li>
+        </ul>
+        <ul id="slide-out" class="sidenav">
           <li><br><br></li>
-          <li><a class="subheader red darken-2 white-text" href="cyberdouro.html">CyberDouro</a></li>
-          <li><a class="waves-effect waves-red white-text" href="cyberdouro.html">Eventos</a></li>
-          <li><a class="waves-effect waves-red white-text" href="cyberdouro.html">Calendário</a></li>
-          <li><a class="waves-effect waves-red white-text" href="cyberdouro.html">Merchandise</a></li>
+          <li><a class="subheader red darken-4 white-text" href="cyberdouro.html">CyberDouro</a></li>
+          <li><a class="waves-effect waves-red" href="cyberdouro.html">Eventos</a></li>
+          <li><a class="waves-effect waves-red" href="cyberdouro.html">Calendário</a></li>
+          <li><a class="waves-effect waves-red" href="cyberdouro.html">Merchandise</a></li>
           <li>
             <div class="divider"></div>
           </li>
-          <li><a class="waves-effect waves-orange white-text" href="index.html">Home</a></li>
-          <li><a class="waves-effect waves-orange white-text" href="equipa.html">Equipa</a></li>
-          <li><a class="waves-effect waves-orange white-text" href="projetos.html">Projetos</a></li>
-          <li><a class="waves-effect waves-orange white-text" href="software.html">Software</a></li>
+          <li><a class="waves-effect waves-orange" href="index.html">Home</a></li>
+          <li><a class="waves-effect waves-orange" href="equipa.html">Equipa</a></li>
+          <li><a class="waves-effect waves-orange" href="projetos.html">Projetos</a></li>
+          <li><a class="waves-effect waves-orange" href="software.html">Software</a></li>
         </ul>
         <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="material-icons">menu</i></a>
 
@@ -62,19 +70,20 @@
     <div class="parallax-container">
       <div class="parallax"><img src="img/cyber01.jpg"></div>
     </div>
-    <div class="section white">
+    <div class="section">
       <div class="row container">
         <h2 class="header">CyberDouro? O que é?</h2>
-        <p class="grey-text text-darken-3 lighten-3">Alguma vez pensaste que um lugar remoto não poderia receber uma conveção gaming/tecnológica?<br>Ora, pensaste mal (estúpido)!<br>Com este evento vamos provar que se pode fazer coisas interessantes em locais outrora desconhecidos ou mais isolados.</p>
+        <p class="grey-text">Alguma vez pensaste que um lugar remoto não poderia receber uma conveção gaming/tecnológica?<br>Ora, pensaste mal (estúpido)!<br>Com este evento vamos provar que se pode fazer coisas interessantes em locais outrora desconhecidos ou mais isolados.
+          </p>
       </div>
     </div>
     <div class="parallax-container">
       <div class="parallax"><img src="img/cyber02.jpg"></div>
     </div>
-    <div class="section white">
+    <div class="section">
       <div class="row container">
         <h2 class="header">Parallax</h2>
-        <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+        <p class="grey-text">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
       </div>
     </div>
     <div class="parallax-container">
@@ -98,9 +107,15 @@
           <div class="col l4 offset-l2 s12 right">
             <!--<h5 class="white-text">Links</h5>-->
             <ul>
-              <li><div class="chip"><a class="white-text text-lighten-3" href="mailto:disermultimedia@gmail.com">disermultimedia@gmail.com</a></div></li>
-              <li><div class="chip"><a class="white-text text-lighten-3" href="#!">Telemovel 1: 259 *** ***</a></div></li>
-              <li><div class="chip"><a class="white-text text-lighten-3" href="#!">Telemovel 2: 91 **** ***</a></div></li>
+              <li>
+                <div class="chip"><a class="white-text text-lighten-3" href="mailto:disermultimedia@gmail.com">disermultimedia@gmail.com</a></div>
+              </li>
+              <li>
+                <div class="chip"><a class="white-text text-lighten-3" href="#!">Telemovel 1: 259 *** ***</a></div>
+              </li>
+              <li>
+                <div class="chip"><a class="white-text text-lighten-3" href="#!">Telemovel 2: 91 **** ***</a></div>
+              </li>
             </ul>
           </div>
         </div>
@@ -116,6 +131,7 @@
   <!--JavaScript at end of body for optimized loading-->
   <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/darkswitch.js"></script>
   <script type="text/javascript">
     $(document).ready(function() {
       $('.tabs').tabs();
