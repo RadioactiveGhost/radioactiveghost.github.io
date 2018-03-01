@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-PT">
 
 <head>
   <meta charset="utf-8">
@@ -12,7 +12,7 @@
   <link type="text/css" rel="stylesheet" href="css/darkswitch.css" media="screen,projection" />
   <link rel="stylesheet" type="text/css" href="css/tooltipster.bundle.min.css" />
   <link rel="stylesheet" type="text/css" href="css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-shadow.min.css" />
-  <link rel="stylesheet" type="text/css" href="css/customtooltip.css"/>
+  <link rel="stylesheet" type="text/css" href="css/customtooltip.css" />
 
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -39,7 +39,7 @@
             <div class="loader-section section-right"></div>
 
     </div>-->
-    <div class="navbar-fixed">
+    <div class="navbar-fixed unselectable">
       <nav class="navbar navbar-inverse">
         <div class="nav-wrapper dark-mode">
           <a href="cyberdouro.html" class="brand-logo center white-text">CyberDouro</a>
@@ -48,7 +48,7 @@
             <li class="hide-on-med-and-down"><span class="tooltip" title="Calendário"><a class="navlink" href="calendário.html"><i class="material-icons dark-mode">date_range</i></a></span></li>
             <li class="hide-on-med-and-down"><span class="tooltip" title="Merchandise"><a class="navlink" href="merch.html"><i class="material-icons dark-mode">shopping_cart</i></a></span></li>
             <li>
-              <a name="dark_light" onclick="toggleDarkLight()"><i class="material-icons dark-mode">brightness_2</i></a>
+              <span class="tooltip" title="Dia/Noite"><a name="dark_light" class="toggler" onclick="toggleDarkLight()"><i class="material-icons dark-mode">brightness_2</i></a></span>
             </li>
             <li>&nbsp&nbsp&nbsp</li>
           </ul>
@@ -59,13 +59,16 @@
         </div>
       </nav>
     </div>
-    <ul id="slide-out" class="sidenav">
+    <ul id="slide-out" class="sidenav unselectable">
       <li><br><br></li>
       <li><a class="subheader red darken-4 white-text" href="cyberdouro.html"><i class="material-icons dark-mode white-text">home</i>CyberDouro</a></li>
-      <li><a class="waves-effect waves-red" href="eventos.html"><i class="material-icons dark-mode">new_releases</i>Eventos</a></li>
-      <li><a class="waves-effect waves-red" href="calendario.html"><i class="material-icons dark-mode">date_range</i>Calendário</a></li>
-      <li><a class="waves-effect waves-red" href="merch.html"><i class="material-icons dark-mode">shopping_cart</i>Merchandise</a></li>
-
+      <li><a class="waves-effect waves-red" href="eventos.html"><i class="material-icons dark-mode iconmode">new_releases</i>Eventos</a></li>
+      <li><a class="waves-effect waves-red" href="calendario.html"><i class="material-icons dark-mode iconmode">date_range</i>Calendário</a></li>
+      <li><a class="waves-effect waves-red" href="merch.html"><i class="material-icons dark-mode iconmode">shopping_cart</i>Merchandise</a></li>
+      <li><div class="divider"></div></li>
+      <li>
+        <a name="dark_light" class="toggler" onclick="toggleDarkLight()"><i class="material-icons iconmode dark-mode">brightness_2</i>Dia/Noite</a>
+      </li>
     </ul>
   </header>
 
@@ -74,26 +77,27 @@
 
 
     <div class="parallax-container">
-      <div class="parallax"><img src="img/douro01.jpg"></div>
+      <div class="parallax unselectable"><img src="img/douro01.jpg"></div>
     </div>
     <div class="section">
       <div class="row container">
-        <h2 class="header">CyberDouro? O que é?</h2>
-        <p class="grey-text flow-text">Alguma vez pensaste que um lugar remoto não poderia receber uma conveção gaming/tecnológica?<br>Ora, pensaste mal (estúpido)!<br>Com este evento vamos provar que se pode fazer coisas interessantes em locais outrora desconhecidos ou mais isolados.
+        <h2 class="header unselectable">CyberDouro? O que é?</h2>
+        <p class="grey-text flow-text unselectable">Alguma vez pensaste que um lugar remoto não poderia receber uma conveção gaming/tecnológica?<br>Ora, pensaste mal (estúpido)!<br>Com este evento vamos provar que se pode fazer coisas interessantes em locais outrora desconhecidos ou mais isolados.
         </p>
       </div>
     </div>
     <div class="parallax-container">
-      <div class="parallax"><img src="img/douro02.jpg"></div>
+      <div class="parallax unselectable"><img src="img/douro02.jpg"></div>
     </div>
     <div class="section">
       <div class="row container">
-        <h2 class="header">Região do Douro</h2>
-        <p class="grey-text flow-text">É do conhecimento geral que a região demarcada do Douro prima pelas suas paisagens rurais marcadas pelo rio e pelo trabalho do Homem, os seus vinhos únicos, conhecidos e classificados em todo o mundo e pelas raízes fortes de videira da sua cultura e das suas gentes, que por entre socalcos, margens e montanhas fazem chegar a sua beleza a todos os cantos deste país e mundo.</p>
+        <h2 class="header unselectable">Região do Douro</h2>
+        <p class="grey-text flow-text unselectable">É do conhecimento geral que a região demarcada do Douro prima pelas suas paisagens rurais marcadas pelo rio e pelo trabalho do Homem, os seus vinhos únicos, conhecidos e classificados em todo o mundo e pelas raízes fortes de videira da sua cultura
+          e das suas gentes, que por entre socalcos, margens e montanhas fazem chegar a sua beleza a todos os cantos deste país e mundo.</p>
       </div>
     </div>
     <div class="parallax-container">
-      <div class="parallax"><img src="img/douro03.jpg"></div>
+      <div class="parallax unselectable"><img src="img/douro03.jpg"></div>
     </div>
 
 
@@ -138,10 +142,10 @@
       $('.parallax').parallax();
       $('body').addClass('loaded');
       $('.tooltip').tooltipster({
-   animation: 'fall',
-   delay: '25',
-   theme: 'tooltipster-shadow',
-});
+        animation: 'fall',
+        delay: '25',
+        theme: 'tooltipster-shadow',
+      });
     });
     $(window).scroll(function() {
       if ($(document).scrollTop() > 50) {

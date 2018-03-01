@@ -1,16 +1,17 @@
 <!DOCTYPE HTML>
 <html>
-	
+
 	<head>
-		
+
   <link type="text/css" rel="stylesheet" href="mogami/css/preloader.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="mogami/css/darkswitch.css" media="screen,projection" />
 		<style>
 			.container{position: relative;top: 0;left: 0;float:left;}
 			#A {position: relative;top: 0;left: 0;z-index:3;}
-			#B {position: absolute;top: 0px;left: 0px;z-index:1;-webkit-animation: spin 1.7s linear infinite;animation: spin 1.7s linear infinite;}
+			#B {position: absolute;top: 0px;left: 0px;z-index:1;-webkit-animation: spin 1.5s linear infinite;animation: spin 1.5s linear infinite;}
 		</style>
 	</head>
-	<body>
+	<body id="body" class="dark-mode">
 		<div class="container">
 			<img id="A" src="img/lilghost_skull.png">
 			<img id="B" src="img/lilghost_radioactive.png">
@@ -43,6 +44,14 @@
 			<img id="A" src="img/lilghost7_skull.png">
 			<img id="B" src="img/lilghost1_radioactive.png">
 		</div>
+		<h1>Dark/Light Mode Switcher</h1>
+
+  <button type="button" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode">🌛</button>
+
+  <p>Just press the button above to toggle!</p>
+	<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScVdmgDhA43AnssGH9KJQY6Hd1O71NeHbavdYg3pbRVCgp7dg/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+	  <script type="text/javascript" src="mogami/js/darkswitch.js"></script>
 	</body>
 
 </html>

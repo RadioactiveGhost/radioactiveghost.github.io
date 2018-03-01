@@ -1,3 +1,6 @@
 .tooltipster-base {
-	margin-left: 26px;
+margin-left: 26px;
+}
+.tooltipster-content{
+  padding:20px;
 }
