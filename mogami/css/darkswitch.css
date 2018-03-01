@@ -13,7 +13,7 @@ body.dark-mode button {
   color: #111;
 }
 body.dark-mode ul.sidenav{
-  background-color: #111;
+  background-color: rgb(17, 17, 17);
   color: #eee;
 }
 body.dark-mode nav{
@@ -22,6 +22,21 @@ body.dark-mode nav{
 body.dark-mode .page-footer{
   background-color: #2d2d2d;
 }
+
+body.dark-mode nav.navbar{
+   -webkit-transition: all 0.4s ease;
+   transition: all 0.4s ease;
+}
+
+body.dark-mode nav.navbar-inverse {
+    background-color: rgb(17, 17, 17);
+    border-color: rgb(17, 17, 17);
+}
+
+body.dark-mode nav.navbar.transparent {
+  background-color:rgba(17, 17, 17,.4) !important;
+}
+
 
 
 body.light-mode {
@@ -38,13 +53,30 @@ body.light-mode button {
   background-color: #111;
   color: #eee;
 }
-body.light-mode ul.sidenav {
+body.light-mode ul.sidenav{
   background-color: #eee;
   color: #111;
 }
-body.light-mode nav{
-  background-color: #b71c1c;
+body.light-mode a.navlink {
+  color: #eee;
 }
-ody.light-mode .page-footer{
+body.light-mode nav{
+  background-color: rgb(184, 28, 28);
+};
+body.light-mode .page-footer{
   background-color: #E53935;
+}
+
+body.light-mode nav.navbar{
+   -webkit-transition: all 0.4s ease;
+   transition: all 0.4s ease;
+}
+
+body.light-mode nav.navbar-inverse {
+    background-color: rgb(184, 28, 28);
+    border-color: rgb(184, 28, 28);
+}
+
+body.light-mode nav.navbar.transparent {
+  background-color:rgba(184, 28, 28, .4) !important;
 }

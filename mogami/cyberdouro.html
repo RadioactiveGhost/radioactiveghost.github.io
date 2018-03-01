@@ -10,6 +10,9 @@
   <link type="text/css" rel="stylesheet" href="css/footer.css" media="screen,projection" />
   <link type="text/css" rel="stylesheet" href="css/preloader.css" media="screen,projection" />
   <link type="text/css" rel="stylesheet" href="css/darkswitch.css" media="screen,projection" />
+  <link rel="stylesheet" type="text/css" href="css/tooltipster.bundle.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-shadow.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/customtooltip.css"/>
 
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,6 +21,10 @@
   <style>
     #loader-wrapper .loader-section {
       background: #b71c1c;
+    }
+
+    .parallax-container {
+      height: 58em;
     }
   </style>
 </head>
@@ -32,35 +39,34 @@
             <div class="loader-section section-right"></div>
 
     </div>-->
-    <nav>
-      <div class="nav-wrapper class=" dark-mode "">
-        <a href="cyberdouro.html" class="brand-logo center white-text"><span style="font-size:15px;">diSer apresenta</span>&nbsp&nbsp CyberDouro &nbsp&nbsp<span style="font-size:15px;">gametechcon</span>&nbsp&nbsp&nbsp&nbsp&nbsp</a>
-        <ul class="right">
-          <li>
-            <a name="dark_light" onclick="toggleDarkLight()"><i class="material-icons dark-mode">brightness_2</i></a>
-          </li>
-          <li>&nbsp&nbsp&nbsp</li>
-        </ul>
-        <ul id="slide-out" class="sidenav">
-          <li><br><br></li>
-          <li><a class="subheader red darken-4 white-text" href="cyberdouro.html">CyberDouro</a></li>
-          <li><a class="waves-effect waves-red" href="cyberdouro.html">Eventos</a></li>
-          <li><a class="waves-effect waves-red" href="cyberdouro.html">Calendário</a></li>
-          <li><a class="waves-effect waves-red" href="cyberdouro.html">Merchandise</a></li>
-          <li>
-            <div class="divider"></div>
-          </li>
-          <li><a class="waves-effect waves-orange" href="index.html">Home</a></li>
-          <li><a class="waves-effect waves-orange" href="equipa.html">Equipa</a></li>
-          <li><a class="waves-effect waves-orange" href="projetos.html">Projetos</a></li>
-          <li><a class="waves-effect waves-orange" href="software.html">Software</a></li>
-        </ul>
-        <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="material-icons">menu</i></a>
+    <div class="navbar-fixed">
+      <nav class="navbar navbar-inverse">
+        <div class="nav-wrapper dark-mode">
+          <a href="cyberdouro.html" class="brand-logo center white-text"><span style="font-size:15px;">diSer apresenta</span>&nbsp&nbsp CyberDouro &nbsp&nbsp<span style="font-size:15px;">gametechcon</span>&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+          <ul class="right">
+            <li class="hide-on-med-and-down"><span class="tooltip" title="Eventos"><a class="navlink" href="eventos.html"><i class="material-icons dark-mode">new_releases</i></a></span></li>
+            <li class="hide-on-med-and-down"><span class="tooltip" title="Calendário"><a class="navlink" href="calendário.html"><i class="material-icons dark-mode">date_range</i></a></span></li>
+            <li class="hide-on-med-and-down"><span class="tooltip" title="Merchandise"><a class="navlink" href="merch.html"><i class="material-icons dark-mode">shopping_cart</i></a></span></li>
+            <li>
+              <a name="dark_light" onclick="toggleDarkLight()"><i class="material-icons dark-mode">brightness_2</i></a>
+            </li>
+            <li>&nbsp&nbsp&nbsp</li>
+          </ul>
 
+          <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large" id="menu"><i class="material-icons">menu</i></a>
 
-        </ul>
-      </div>
-    </nav>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <ul id="slide-out" class="sidenav">
+      <li><br><br></li>
+      <li><a class="subheader red darken-4 white-text" href="cyberdouro.html"><i class="material-icons dark-mode white-text">home</i>CyberDouro</a></li>
+      <li><a class="waves-effect waves-red" href="eventos.html"><i class="material-icons dark-mode">new_releases</i>Eventos</a></li>
+      <li><a class="waves-effect waves-red" href="calendario.html"><i class="material-icons dark-mode">date_range</i>Calendário</a></li>
+      <li><a class="waves-effect waves-red" href="merch.html"><i class="material-icons dark-mode">shopping_cart</i>Merchandise</a></li>
+
+    </ul>
   </header>
 
 
@@ -68,17 +74,17 @@
 
 
     <div class="parallax-container">
-      <div class="parallax"><img src="img/cyber01.jpg"></div>
+      <div class="parallax"><img src="img/douro01.jpg"></div>
     </div>
     <div class="section">
       <div class="row container">
         <h2 class="header">CyberDouro? O que é?</h2>
         <p class="grey-text">Alguma vez pensaste que um lugar remoto não poderia receber uma conveção gaming/tecnológica?<br>Ora, pensaste mal (estúpido)!<br>Com este evento vamos provar que se pode fazer coisas interessantes em locais outrora desconhecidos ou mais isolados.
-          </p>
+        </p>
       </div>
     </div>
     <div class="parallax-container">
-      <div class="parallax"><img src="img/cyber02.jpg"></div>
+      <div class="parallax"><img src="img/douro02.jpg"></div>
     </div>
     <div class="section">
       <div class="row container">
@@ -87,7 +93,7 @@
       </div>
     </div>
     <div class="parallax-container">
-      <div class="parallax"><img src="img/cyber03.jpg"></div>
+      <div class="parallax"><img src="img/douro03.jpg"></div>
     </div>
 
 
@@ -107,15 +113,7 @@
           <div class="col l4 offset-l2 s12 right">
             <!--<h5 class="white-text">Links</h5>-->
             <ul>
-              <li>
-                <div class="chip"><a class="white-text text-lighten-3" href="mailto:disermultimedia@gmail.com">disermultimedia@gmail.com</a></div>
-              </li>
-              <li>
-                <div class="chip"><a class="white-text text-lighten-3" href="#!">Telemovel 1: 259 *** ***</a></div>
-              </li>
-              <li>
-                <div class="chip"><a class="white-text text-lighten-3" href="#!">Telemovel 2: 91 **** ***</a></div>
-              </li>
+
             </ul>
           </div>
         </div>
@@ -132,12 +130,25 @@
   <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script type="text/javascript" src="js/darkswitch.js"></script>
+  <script type="text/javascript" src="js/tooltipster.bundle.min.js"></script>
   <script type="text/javascript">
     $(document).ready(function() {
       $('.tabs').tabs();
       $('.sidenav').sidenav();
       $('.parallax').parallax();
       $('body').addClass('loaded');
+      $('.tooltip').tooltipster({
+   animation: 'fall',
+   delay: '25',
+   theme: 'tooltipster-shadow',
+});
+    });
+    $(window).scroll(function() {
+      if ($(document).scrollTop() > 50) {
+        $('nav').addClass('transparent');
+      } else {
+        $('nav').removeClass('transparent');
+      }
     });
   </script>
 </body>
