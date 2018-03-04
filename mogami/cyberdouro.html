@@ -26,6 +26,10 @@
     .parallax-container {
       height: 58em;
     }
+    nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {height:75px}
+
+    i.padding{padding-top:6px;}
+
   </style>
 </head>
 
@@ -42,19 +46,19 @@
     <div class="navbar-fixed unselectable">
       <nav class="navbar navbar-inverse">
         <div class="nav-wrapper dark-mode">
-          <a href="cyberdouro.html" class="brand-logo center white-text"><img src="img/cyberlogo.png" style="height:120px; margin-top:-25px;"/></a>
+          <a href="cyberdouro.html" class="brand-logo center white-text"><img id="myImage" src="img/cyber_red.png" class="logocyber" style="height:100px; margin-top:-10px;"/></a>
           <ul class="right">
-            <li class="hide-on-med-and-down"><span class="tooltip" title="Página Principal"><a class="navlink" href="cyberdouro.html"><i class="material-icons dark-mode">home</i></a></span></li>
-            <li class="hide-on-med-and-down"><span class="tooltip" title="Eventos"><a class="navlink" href="eventos.html"><i class="material-icons dark-mode">new_releases</i></a></span></li>
-            <li class="hide-on-med-and-down"><span class="tooltip" title="Calendário"><a class="navlink" href="calendário.html"><i class="material-icons dark-mode">date_range</i></a></span></li>
-            <li class="hide-on-med-and-down"><span class="tooltip" title="Merchandise"><a class="navlink" href="merch.html"><i class="material-icons dark-mode">shopping_cart</i></a></span></li>
+            <li class="hide-on-med-and-down"><span class="tooltip" title="Página Principal"><a class="navlink" href="cyberdouro.html"><i class="material-icons dark-mode padding">home</i></a></span></li>
+            <li class="hide-on-med-and-down"><span class="tooltip" title="Eventos"><a class="navlink" href="eventos.html"><i class="material-icons dark-mode padding">new_releases</i></a></span></li>
+            <li class="hide-on-med-and-down"><span class="tooltip" title="Calendário"><a class="navlink" href="calendário.html"><i class="material-icons dark-mode padding">date_range</i></a></span></li>
+            <li class="hide-on-med-and-down"><span class="tooltip" title="Merchandise"><a class="navlink" href="merch.html"><i class="material-icons dark-mode padding">shopping_cart</i></a></span></li>
             <li>
-              <span class="tooltip" title="Dia/Noite"><a name="dark_light" class="toggler" onclick="toggleDarkLight()"><i class="material-icons dark-mode">brightness_2</i></a></span>
+              <span class="tooltip" title="Dia/Noite"><a name="dark_light" class="toggler" onclick="toggleDarkLight()"><i class="material-icons dark-mode padding">brightness_2</i></a></span>
             </li>
             <li>&nbsp&nbsp&nbsp</li>
           </ul>
 
-          <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large" id="menu"><i class="material-icons">menu</i></a>
+          <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large" id="menu"><i class="material-icons navicon padding">menu</i></a>
 
           </ul>
         </div>
@@ -76,7 +80,7 @@
 
   <main>
 
-    <div style="text-align:right;"><img src="img/cyberlogo.png" style="position: absolute;text-align:right;margin-left:-35%;margin-top:20%;"></div>
+
     <div class="parallax-container">
       <div class="parallax unselectable"><img src="img/douro01.jpg"></div>
     </div>
@@ -149,7 +153,7 @@
       });
     });
     $(window).scroll(function() {
-      if ($(document).scrollTop() > 50) {
+      if ($(document).scrollTop() > 300) {
         $('nav').addClass('transparent');
       } else {
         $('nav').removeClass('transparent');

@@ -14,6 +14,9 @@ body.light-mode .iconmode {color:#444444 !important;}
 
 body.dark-mode .iconmode {color:white !important;}
 
+body.light-mode .navicon {color: #E53935}
+body.dark-mode .navicon {color: #eee}
+
 .sidenav-trigger {color: #eee !important}
 .unselectable {
   -webkit-touch-callout: none;
@@ -85,13 +88,17 @@ body.light-mode ul.sidenav{
   color: #111;
 }
 body.light-mode a.navlink {
-  color: #eee;
+  color: #f00;
 }
 body.light-mode nav{
-  background-color: rgb(184, 28, 28);
+  background-color: rgb(184, 184, 184);
 };
 body.light-mode .page-footer{
   background-color: #E53935;
+}
+
+body.light-mode .logocyber{
+  content:url("http://imgur.com/SZ8Cm.jpg");
 }
 
 body.light-mode nav.navbar{
@@ -100,8 +107,7 @@ body.light-mode nav.navbar{
 }
 
 body.light-mode nav.navbar-inverse {
-    background-color: rgb(184, 28, 28);
-    border-color: rgb(184, 28, 28);
+    background-color: #eee;
 }
 
 body.light-mode nav.navbar.transparent {
