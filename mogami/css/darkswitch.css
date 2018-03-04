@@ -97,10 +97,6 @@ body.light-mode .page-footer{
   background-color: #E53935;
 }
 
-body.light-mode .logocyber{
-  content:url("http://imgur.com/SZ8Cm.jpg");
-}
-
 body.light-mode nav.navbar{
    -webkit-transition: all 0.4s ease;
    transition: all 0.4s ease;
