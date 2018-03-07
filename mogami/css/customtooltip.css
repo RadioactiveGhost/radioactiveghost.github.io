@@ -5,7 +5,7 @@ margin-left: 26px !important;
 @media screen and (-webkit-min-device-pixel-ratio:0)
   and (min-resolution:.001dpcm) {
     .tooltipster-base {
-    margin-left: 0px !important;
+    margin-left: 0px !important ;
     }
 }
 .tooltipster-content{

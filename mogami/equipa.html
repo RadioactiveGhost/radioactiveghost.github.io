@@ -9,24 +9,38 @@
   <link type="text/css" rel="stylesheet" href="css/materialize_ikom.min.css" media="screen,projection" />
   <link type="text/css" rel="stylesheet" href="css/footer.css" media="screen,projection" />
   <link type="text/css" rel="stylesheet" href="css/preloader.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="css/darkswitch.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="css/diser.css" media="screen,projection" />
 
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mogami Team</title>
   <meta name="theme-color" content="#ffb300">
   <style>
-    nav {background-color: #eee/*#b8c3a5*/;}
-    nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {height:100px}
+    nav {
+      background-color: #eee/*#b8c3a5*/
+      ;
+    }
 
-    i.padding{padding-top:15px;}
+    nav,
+    nav .nav-wrapper i,
+    nav a.sidenav-trigger,
+    nav a.sidenav-trigger i {
+      height: 100px
+    }
 
-    .page-footer{
+    i.padding {
+      padding-top: 15px;
+    }
+
+    .page-footer {
       background-color: #b8c3a5;
     }
+    main{margin-top: 80px;}
   </style>
 </head>
 
-<body>
+<body id="body" class="light-mode">
   <div id="loader-wrapper">
     <div id="loader"></div>
 
@@ -35,27 +49,34 @@
 
   </div>
   <header>
-    <nav>
-      <div class="nav-wrapper">
-        <a href="home.html" class="brand-logo center"><img src="img/diSer_logo.png" style="height:84px;margin-left: 9px;margin-top:8px;" class="center"></a>
-
-        <ul id="slide-out" class="sidenav white">
-          <li><br><br></li>
-          <li><a class="waves-effect waves-red gray-text" href="cyberdouro.html">CyberDouro</a></li>
-          <li>
-            <div class="divider"></div>
-          </li>
-          <li><a class="waves-effect waves-orange gray-text" href="index.html">Home</a></li>
-          <li><a class="waves-effect waves-orange gray-text amber darken-2" href="equipa.html">Equipa</a></li>
-          <li><a class="waves-effect waves-orange gray-text" href="projetos.html">Projetos</a></li>
-          <li><a class="waves-effect waves-orange gray-text" href="software.html">Software</a></li>
-        </ul>
-        <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="material-icons amber-text padding">menu</i></a>
+    <div class="navbar-fixed">
+      <nav class="navbar navbar-inverse">
+        <div class="nav-wrapper">
+          <a href="home.html" class="brand-logo center"><img src="img/diSer_logo.png" style="height:84px;margin-left: 9px;margin-top:8px;" class="center diserlogo"></a>
 
 
-        </ul>
-      </div>
-    </nav>
+          <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="material-icons amber-text padding">menu</i></a>
+
+
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <ul id="slide-out" class="sidenav white">
+      <li><br><br></li>
+      <li><a class="waves-effect waves-red gray-text" href="cyberdouro.html">CyberDouro</a></li>
+      <li>
+        <div class="divider"></div>
+      </li>
+      <li><a class="waves-effect waves-orange gray-text" href="index.html">Home</a></li>
+      <li><a class="waves-effect waves-orange gray-text amber darken-2" href="equipa.html">Equipa</a></li>
+      <li><a class="waves-effect waves-orange gray-text" href="projetos.html">Projetos</a></li>
+      <li><a class="waves-effect waves-orange gray-text" href="software.html">Software</a></li>
+      <li>
+        <div class="divider"></div>
+      </li>
+      <li><a class="waves-effect waves-orange gray-text" href="index.html">diSer</a></li>
+    </ul>
   </header>
 
 
@@ -346,6 +367,17 @@
       $('.tabs').tabs();
       $('.sidenav').sidenav();
       $('body').addClass('loaded');
+    });
+    $(window).scroll(function() {
+      if ($(document).scrollTop() > 300) {
+        $('nav').addClass('transparent');
+        $('.diserlogo').addClass('resize');
+        $('.padding').addClass('resize');
+      } else {
+        $('nav').removeClass('transparent');
+        $('.diserlogo').removeClass('resize');
+        $('.padding').removeClass('resize');
+      }
     });
   </script>
 </body>
