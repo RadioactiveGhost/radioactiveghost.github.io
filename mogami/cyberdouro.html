@@ -13,6 +13,8 @@
   <link rel="stylesheet" type="text/css" href="css/tooltipster.bundle.min.css" />
   <link rel="stylesheet" type="text/css" href="css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-shadow.min.css" />
   <link rel="stylesheet" type="text/css" href="css/customtooltip.css" />
+  <link type="text/css" rel="stylesheet" href="css/unslider.css">
+  <link rel="stylesheet" href="css/unslider-dots.css">
 
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,9 +28,23 @@
     .parallax-container {
       height: 58em;
     }
-    nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {height:75px}
 
-    i.padding{padding-top:6px;}
+    nav,
+    nav .nav-wrapper i,
+    nav a.sidenav-trigger,
+    nav a.sidenav-trigger i {
+      height: 75px
+    }
+
+    i.padding {
+      padding-top: 6px;
+    }
+    div.slider{height:800px !important;}
+    ul.indicators{z-index: 1001;bottom: 50px !important;}
+    .slider .indicators .indicator-item {background-color: #e6e6ff;}
+    .slider .indicators .indicator-item.active {background-color: #b71c1c;}
+    .nextslide, .prevslide{position: relative;top:50%;z-index:1002; -moz-border-radius: 50px; -webkit-border-radius: 50px; border-radius: 50px;width:64px;height:64px;}
+    .nextslide i, .prevslide i {font-size: 4.2rem;color:white !important}
 
   </style>
 </head>
@@ -70,7 +86,9 @@
       <li><a class="waves-effect waves-red" href="eventos.html"><i class="material-icons dark-mode iconmode">new_releases</i>Eventos</a></li>
       <li><a class="waves-effect waves-red" href="calendario.html"><i class="material-icons dark-mode iconmode">date_range</i>Calendário</a></li>
       <li><a class="waves-effect waves-red" href="merch.html"><i class="material-icons dark-mode iconmode">shopping_cart</i>Merchandise</a></li>
-      <li><div class="divider"></div></li>
+      <li>
+        <div class="divider"></div>
+      </li>
       <li>
         <a name="dark_light" class="toggler" onclick="toggleDarkLight()"><i class="material-icons iconmode dark-mode">brightness_2</i>Dia/Noite</a>
       </li>
@@ -83,6 +101,49 @@
 
 
   <main>
+
+
+
+
+    <div class="slider">
+      <a class="waves-effect waves-light right nextslide unselectable"><i class="material-icons right">chevron_right</i></a>
+        <a class="waves-effect waves-light left prevslide unselectable"><i class="material-icons left">chevron_left</i></a>
+      <ul class="slides">
+        <li>
+          <img src="img/douro02.jpg">
+          <!-- random image -->
+          <div class="caption center-align">
+            <h3>VINTE PIÇOS A VOAR</h3>
+            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+          </div>
+        </li>
+        <li>
+          <img src="img/douro03.jpg">
+          <!-- random image -->
+          <div class="caption center-align">
+            <h3>MAL ACABAM DE NASCER</h3>
+            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+          </div>
+        </li>
+        <li>
+          <img src="img/douro02.jpg">
+          <!-- random image -->
+          <div class="caption center-align">
+            <h3>COM OS QUILHÕES A DAR A DAR</h3>
+            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+          </div>
+        </li>
+        <li>
+          <img src="img/douro03.jpg">
+          <!-- random image -->
+          <div class="caption center-align">
+            <h3>*NHEC NHEC NHEC NHEC*</h3>
+            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+          </div>
+        </li>
+      </ul>
+    </div>
+
 
 
     <div class="parallax-container">
@@ -150,12 +211,23 @@
       $('.sidenav').sidenav();
       $('.parallax').parallax();
       $('body').addClass('loaded');
+      $('.slider').slider({
+        height: 800,
+        duration: 250,
+        interval: 3000,
+      });
       $('.tooltip').tooltipster({
         animation: 'fade',
         delay: '25',
         theme: 'tooltipster-shadow',
       });
     });
+    $('.nextslide').click(function(){
+      $('.slider').slider('next');
+   });
+   $('.prevslide').click(function(){
+     $('.slider').slider('prev');
+  });
     $(window).scroll(function() {
       if ($(document).scrollTop() > 300) {
         $('nav').addClass('transparent');
