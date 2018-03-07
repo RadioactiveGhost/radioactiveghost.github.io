@@ -51,7 +51,7 @@
             <li class="hide-on-med-and-down"><span class="tooltip" title="Página Principal"><a class="navlink" href="cyberdouro.html"><i class="material-icons dark-mode padding">home</i></a></span></li>
             <li class="hide-on-med-and-down"><span class="tooltip" title="Eventos"><a class="navlink" href="eventos.html"><i class="material-icons dark-mode padding">new_releases</i></a></span></li>
             <li class="hide-on-med-and-down"><span class="tooltip" title="Calendário"><a class="navlink" href="calendário.html"><i class="material-icons dark-mode padding">date_range</i></a></span></li>
-            <li class="hide-on-med-and-down"><span class="tooltip" title="Merchandise"><a class="navlink" href="merch.html"><i class="material-icons dark-mode padding">shopping_cart</i></a></span></li>
+            <li class="hide-on-med-and-down"><span class="tooltip" title="Merchandise"><a class="navlink" href="#"><i class="material-icons dark-mode padding">shopping_cart</i></a></span></li>
             <li>
               <span class="tooltip" title="Dia/Noite"><a name="dark_light" class="toggler" onclick="toggleDarkLight()"><i class="material-icons dark-mode padding">brightness_2</i></a></span>
             </li>
@@ -147,9 +147,10 @@
       $('.parallax').parallax();
       $('body').addClass('loaded');
       $('.tooltip').tooltipster({
-        animation: 'fall',
+        animation: 'fade',
         delay: '25',
         theme: 'tooltipster-shadow',
+        trigger: 'click',
       });
     });
     $(window).scroll(function() {

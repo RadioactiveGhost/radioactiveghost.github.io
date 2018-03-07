@@ -53,12 +53,16 @@ body.dark-mode nav{
 body.dark-mode .page-footer{
   background-color: #2d2d2d;
 }
-
+body.light-mode .footer-copyright .container {
+  color: #eee !important;
+}
 body.dark-mode nav.navbar{
    -webkit-transition: all 0.4s ease;
    transition: all 0.4s ease;
 }
-
+body.dark-mode .card-content{
+  background: #2d2d2d;
+}
 body.dark-mode nav.navbar-inverse {
     background-color: rgb(17, 17, 17);
     border-color: rgb(17, 17, 17);
@@ -88,24 +92,32 @@ body.light-mode ul.sidenav{
   color: #111;
 }
 body.light-mode a.navlink {
+  color: #2d2d2d;
+  transition-duration: 500ms;
+}
+body.light-mode a.navlink:hover {
   color: #f00;
 }
 body.light-mode nav{
   background-color: rgb(184, 184, 184);
-};
-body.light-mode .page-footer{
-  background-color: #E53935;
 }
-
+body.light-mode .page-footer{
+  background-color: #eee;
+}
+body.light-mode .footer-copyright .container {
+  color: #222222 !important;
+}
 body.light-mode nav.navbar{
    -webkit-transition: all 0.4s ease;
    transition: all 0.4s ease;
 }
-
+body.light-mode .card-content{
+  background: #eee;
+}
 body.light-mode nav.navbar-inverse {
     background-color: #eee;
 }
 
 body.light-mode nav.navbar.transparent {
-  background-color:rgba(184, 28, 28, .4) !important;
+  background-color:rgba(184, 184, 184, .4) !important;
 }
