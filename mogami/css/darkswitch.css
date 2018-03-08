@@ -1,3 +1,19 @@
+div.concursotitulo {
+  margin-left: 2%;
+}
+@media only screen and (max-width: 992px) {
+    div.concursotitulo {
+        margin-left: -3%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    div.concursotitulo {
+        margin-left: -10%;
+    }
+}
+
+
+
 .toggler:hover{
   cursor: pointer;
 }
