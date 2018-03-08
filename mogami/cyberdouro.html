@@ -33,17 +33,21 @@
     nav .nav-wrapper i,
     nav a.sidenav-trigger,
     nav a.sidenav-trigger i {
-      height: 75px
+      height: 135px
     }
 
     i.padding {
-      padding-top: 6px;
+      -webkit-transition: all 0.4s ease;
+      transition: all 0.4s ease;
+      padding-top: 35px;
+      padding-left: 5px;
+      padding-right: 5px;
     }
     div.slider{height:800px !important;}
-    ul.indicators{z-index: 1001;bottom: 50px !important;}
+    ul.indicators{z-index: 300;bottom: 50px !important;}
     .slider .indicators .indicator-item {background-color: #e6e6ff;}
     .slider .indicators .indicator-item.active {background-color: #b71c1c;}
-    .nextslide, .prevslide{position: relative;top:50%;z-index:1002; -moz-border-radius: 50px; -webkit-border-radius: 50px; border-radius: 50px;width:64px;height:64px;}
+    .nextslide, .prevslide{position: relative;top:50%;z-index:10; -moz-border-radius: 50px; -webkit-border-radius: 50px; border-radius: 50px;width:64px;height:64px;}
     .nextslide i, .prevslide i {font-size: 4.2rem;color:white !important}
 
   </style>
@@ -62,16 +66,16 @@
     <div class="navbar-fixed unselectable">
       <nav class="navbar navbar-inverse">
         <div class="nav-wrapper dark-mode">
-          <a href="cyberdouro.html" class="brand-logo center white-text"><img id="myImage" src="img/cyber_red.png" class="logocyber" style="height:100px; margin-top:-10px;"/></a>
+          <a href="cyberdouro.html" class="brand-logo center white-text"><img id="myImage" src="img/cyber_red.png" class="logocyber" style="height:170px; margin-top:-15px;-webkit-transition: all 0.4s ease; transition: all 0.4s ease;"/></a>
           <ul class="right">
             <li class="hide-on-med-and-down"><span class="tooltip" title="Página Principal"><a class="navlink" href="cyberdouro.html"><i class="material-icons dark-mode padding">home</i></a></span></li>
             <li class="hide-on-med-and-down"><span class="tooltip" title="Eventos"><a class="navlink" href="eventos.html"><i class="material-icons dark-mode padding">new_releases</i></a></span></li>
+            <li class="hide-on-med-and-down"><span class="tooltip" title="Concursos"><a class="navlink" href="eventos.html"><i class="material-icons dark-mode padding">announcement</i></a></span></li>
             <li class="hide-on-med-and-down"><span class="tooltip" title="Calendário"><a class="navlink" href="calendário.html"><i class="material-icons dark-mode padding">date_range</i></a></span></li>
-            <li class="hide-on-med-and-down"><span class="tooltip" title="Merchandise"><a class="navlink" href="#"><i class="material-icons dark-mode padding">shopping_cart</i></a></span></li>
+            <li class="hide-on-med-and-down"><span class="tooltip" title="Contactos"><a class="navlink" href="#"><i class="material-icons dark-mode padding">phone</i></a></span></li>
             <li>
               <span class="tooltip" title="Dia/Noite"><a name="dark_light" class="toggler" onclick="toggleDarkLight()"><i class="material-icons dark-mode padding">brightness_2</i></a></span>
             </li>
-            <li>&nbsp&nbsp&nbsp&nbsp&nbsp</li>
           </ul>
 
           <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large" id="menu"><i class="material-icons navicon padding">menu</i></a>
@@ -84,8 +88,9 @@
       <li><br><br></li>
       <li><a class="subheader red darken-4 white-text" href="cyberdouro.html"><i class="material-icons dark-mode white-text">home</i>CyberDouro</a></li>
       <li><a class="waves-effect waves-red" href="eventos.html"><i class="material-icons dark-mode iconmode">new_releases</i>Eventos</a></li>
+      <li><a class="waves-effect waves-red" href="concursos.html"><i class="material-icons dark-mode iconmode">announcement</i>Concursos</a></li>
       <li><a class="waves-effect waves-red" href="calendario.html"><i class="material-icons dark-mode iconmode">date_range</i>Calendário</a></li>
-      <li><a class="waves-effect waves-red" href="merch.html"><i class="material-icons dark-mode iconmode">shopping_cart</i>Merchandise</a></li>
+      <li><a class="waves-effect waves-red" href="contactos.html"><i class="material-icons dark-mode iconmode">phone</i>Contactos</a></li>
       <li>
         <div class="divider"></div>
       </li>
@@ -231,8 +236,10 @@
     $(window).scroll(function() {
       if ($(document).scrollTop() > 300) {
         $('nav').addClass('transparent');
+        $('.logocyber').addClass('resize');
       } else {
         $('nav').removeClass('transparent');
+        $('.logocyber').removeClass('resize');
       }
     });
   </script>

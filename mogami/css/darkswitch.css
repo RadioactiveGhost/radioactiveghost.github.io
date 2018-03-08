@@ -2,6 +2,10 @@
   cursor: pointer;
 }
 
+main {
+  padding-top: 60px !important;
+}
+
 
 body.dark-mode a.toggler{
   color:white;
@@ -27,6 +31,20 @@ body.dark-mode .navicon {color: #eee}
   user-select: none;
 }
 
+nav.navbar.transparent i.padding{
+  padding: 8px 0 0 0;
+}
+img.resize{
+  height: 100px !important;
+  margin-top: 15px;
+}
+
+nav,
+nav.navbar.transparent .nav-wrapper i,
+nav.navbar.transparent a.sidenav-trigger,
+nav.navbar.transparent a.sidenav-trigger i {
+  height: 75px
+}
 
 
 body.dark-mode {
@@ -35,6 +53,9 @@ body.dark-mode {
 }
 body.dark-mode a {
   color: #eee;
+}
+body.dark-mode div.card-content {
+  background-color: #2d2d2d;
 }
 body.dark-mode p.grey-text {
   color: #d3d3d3 !important;
@@ -70,6 +91,7 @@ body.dark-mode nav.navbar-inverse {
 
 body.dark-mode nav.navbar.transparent {
   background-color:rgba(17, 17, 17,.4) !important;
+  height: 75px;
 }
 
 
@@ -79,6 +101,9 @@ body.light-mode {
 }
 body.light-mode a {
   color: #111;
+}
+body.light-mode div.card-content {
+  background-color: #fff;
 }
 body.light-mode p.grey-text {
   color: #2d2d2d !important;
@@ -120,4 +145,5 @@ body.light-mode nav.navbar-inverse {
 
 body.light-mode nav.navbar.transparent {
   background-color:rgba(184, 184, 184, .4) !important;
+  height: 75px;
 }
