@@ -43,13 +43,41 @@
       padding-left: 5px;
       padding-right: 5px;
     }
-    div.slider{height:800px !important;}
-    ul.indicators{z-index: 300;bottom: 50px !important;}
-    .slider .indicators .indicator-item {background-color: #e6e6ff;}
-    .slider .indicators .indicator-item.active {background-color: #b71c1c;}
-    .nextslide, .prevslide{position: relative;top:50%;z-index:10; -moz-border-radius: 50px; -webkit-border-radius: 50px; border-radius: 50px;width:64px;height:64px;}
-    .nextslide i, .prevslide i {font-size: 4.2rem;color:white !important}
 
+    div.slider {
+      height: 800px !important;
+    }
+
+    ul.indicators {
+      z-index: 300;
+      bottom: 50px !important;
+    }
+
+    .slider .indicators .indicator-item {
+      background-color: #e6e6ff;
+    }
+
+    .slider .indicators .indicator-item.active {
+      background-color: #b71c1c;
+    }
+
+    .nextslide,
+    .prevslide {
+      position: relative;
+      top: 50%;
+      z-index: 10;
+      -moz-border-radius: 50px;
+      -webkit-border-radius: 50px;
+      border-radius: 50px;
+      width: 64px;
+      height: 64px;
+    }
+
+    .nextslide i,
+    .prevslide i {
+      font-size: 4.2rem;
+      color: white !important
+    }
   </style>
 </head>
 
@@ -64,13 +92,17 @@
 
     </div>-->
     <div class="navbar-fixed unselectable">
+      <ul id="listaeventos2" class="dropdown-content listaeventos">
+        <li><a href="fotografia.html">Fotografia</a></li>
+        <li><a href="#!">Curtas</a></li>
+      </ul>
       <nav class="navbar navbar-inverse">
         <div class="nav-wrapper dark-mode">
           <a href="cyberdouro.html" class="brand-logo center white-text"><img id="myImage" src="img/cyber_red.png" class="logocyber" style="height:170px; margin-top:-15px;-webkit-transition: all 0.4s ease; transition: all 0.4s ease;"/></a>
           <ul class="right">
             <li class="hide-on-med-and-down"><span class="tooltip" title="Página Principal"><a class="navlink" href="cyberdouro.html"><i class="material-icons dark-mode padding">home</i></a></span></li>
             <li class="hide-on-med-and-down"><span class="tooltip" title="Eventos"><a class="navlink" href="eventos.html"><i class="material-icons dark-mode padding">new_releases</i></a></span></li>
-            <li class="hide-on-med-and-down"><span class="tooltip" title="Concursos"><a class="navlink" href="eventos.html"><i class="material-icons dark-mode padding">announcement</i></a></span></li>
+            <li class="hide-on-med-and-down"><span class="tooltip" title="Concursos"><a class="navlink dropdown-trigger" href="#!" data-target="listaeventos2"><i class="material-icons dark-mode padding">announcement</i></a></span></li>
             <li class="hide-on-med-and-down"><span class="tooltip" title="Calendário"><a class="navlink" href="calendário.html"><i class="material-icons dark-mode padding">date_range</i></a></span></li>
             <li class="hide-on-med-and-down"><span class="tooltip" title="Contactos"><a class="navlink" href="#"><i class="material-icons dark-mode padding">phone</i></a></span></li>
             <li>
@@ -88,7 +120,11 @@
       <li><br><br></li>
       <li><a class="subheader red darken-4 white-text" href="cyberdouro.html"><i class="material-icons dark-mode white-text">home</i>CyberDouro</a></li>
       <li><a class="waves-effect waves-red" href="eventos.html"><i class="material-icons dark-mode iconmode">new_releases</i>Eventos</a></li>
-      <li><a class="waves-effect waves-red" href="concursos.html"><i class="material-icons dark-mode iconmode">announcement</i>Concursos</a></li>
+      <li><a class="waves-effect waves-red dropdown-trigger" href="#!" data-target="listaeventos"><i class="material-icons dark-mode iconmode">announcement</i>Concursos<i class="material-icons dark-mode iconmode right">arrow_drop_down</i></a></li>
+      <ul id='listaeventos' class='dropdown-content listaeventos'>
+        <li><a href="fotografia.html">Fotografia</a></li>
+        <li><a href="#!">Curtas</a></li>
+      </ul>
       <li><a class="waves-effect waves-red" href="calendario.html"><i class="material-icons dark-mode iconmode">date_range</i>Calendário</a></li>
       <li><a class="waves-effect waves-red" href="contactos.html"><i class="material-icons dark-mode iconmode">phone</i>Contactos</a></li>
       <li>
@@ -112,7 +148,7 @@
 
     <div class="slider">
       <a class="waves-effect waves-light right nextslide unselectable"><i class="material-icons right">chevron_right</i></a>
-        <a class="waves-effect waves-light left prevslide unselectable"><i class="material-icons left">chevron_left</i></a>
+      <a class="waves-effect waves-light left prevslide unselectable"><i class="material-icons left">chevron_left</i></a>
       <ul class="slides">
         <li>
           <img src="img/douro02.jpg">
@@ -216,6 +252,7 @@
       $('.tabs').tabs();
       $('.sidenav').sidenav();
       $('.parallax').parallax();
+      $('.dropdown-trigger').dropdown();
       $('body').addClass('loaded');
       $('.slider').slider({
         height: 800,
@@ -228,12 +265,12 @@
         theme: 'tooltipster-shadow',
       });
     });
-    $('.nextslide').click(function(){
+    $('.nextslide').click(function() {
       $('.slider').slider('next');
-   });
-   $('.prevslide').click(function(){
-     $('.slider').slider('prev');
-  });
+    });
+    $('.prevslide').click(function() {
+      $('.slider').slider('prev');
+    });
     $(window).scroll(function() {
       if ($(document).scrollTop() > 300) {
         $('nav').addClass('transparent');

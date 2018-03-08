@@ -12,7 +12,9 @@ div.concursotitulo {
     }
 }
 
-
+ul#listaeventos2 li a{
+  height: 60px;
+}
 
 .toggler:hover{
   cursor: pointer;
@@ -87,6 +89,13 @@ body.dark-mode ul.sidenav{
 body.dark-mode nav{
   background-color: #333;
 }
+
+
+body.dark-mode .listaeventos{
+  background-color: #2d2d2d;
+}
+
+
 body.dark-mode .page-footer{
   background-color: #2d2d2d;
 }
