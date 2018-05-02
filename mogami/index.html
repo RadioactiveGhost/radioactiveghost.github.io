@@ -9,69 +9,42 @@
   <link type="text/css" rel="stylesheet" href="css/materialize_ikom.min.css" media="screen,projection" />
   <link type="text/css" rel="stylesheet" href="css/footer.css" media="screen,projection" />
   <link type="text/css" rel="stylesheet" href="css/preloader.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="css/diser.min.css" media="screen,projection" />
   <link type="text/css" rel="stylesheet" href="css/darkswitch.css" media="screen,projection" />
-  <link type="text/css" rel="stylesheet" href="css/diser.css" media="screen,projection" />
+  <link rel="stylesheet" type="text/css" href="css/jquery.fullpage.min.css" />
 
 
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mogami Index</title>
   <meta name="theme-color" content="#ffb300">
-  <style>
-    img {
-      position: absolute;
-      transition: opacity .5s ease-in;
-    }
-
-    img+img {
-      opacity: 0;
-    }
-
-    .parallax-container {
-      height: 700px;
-    }
-
-    nav {
-      background-color: #eee/*#b8c3a5*/
-      ;
-    }
-
-    nav,
-    nav .nav-wrapper i,
-    nav a.sidenav-trigger,
-    nav a.sidenav-trigger i {
-      height: 100px
-    }
-
-    i.padding {
-      padding-top: 15px;
-    }
-
-    .page-footer {
-      background-color: #b8c3a5;
-    }
-  </style>
 </head>
 
+
 <body id="body" class="light-mode">
-  <div id="loader-wrapper">
+  <!--<div id="loader-wrapper">
     <div id="loader"></div>
 
     <div class="loader-section section-left"></div>
     <div class="loader-section section-right"></div>
 
+  </div>-->
+  <div id="bookmark" class="z-depth-2 hide-on-small-only" style="position: absolute; z-index: 998; background-color: #ffb300; height: 460px; width: 200px; margin-left: 6%;margin-top:-140px;">
+    <p style="position: absolute; color: white;text-align: center;"><br><br>Contactos<br>911 345 678<br>disermultimedia@gmail.com</p>
+    <img style="padding-top: 240px;padding-left: 40px; width: 160px;" src="img/disermultimedia.png">
   </div>
   <header>
-    <div class="navbar-fixed">
+    <div class="navbar-fixed unselectable">
       <nav class="navbar navbar-inverse">
-        <div class="nav-wrapper">
-          <a href="home.html" class="brand-logo center"><img src="img/diSer_logo.png" style="height:84px;margin-left: 9px;margin-top:8px;" class="center diserlogo"></a>
-
-
-          <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="material-icons amber-text padding">menu</i></a>
-
-
-          </ul>
+        <div class="nav-wrapper dark-mode">
+          <a href="#" data-target="slide-out" class="brand-logo center sidenav-trigger show-on-large"><img src="img/Site2.png" style="margin-left: -280px;" class="center disermenu"></a>
+          <a href="home.html" class="brand-logo center"><img src="img/Site1.png" style="margin-left: 0px;" class="center disermenu"></a>
+          <a name="dark-light" href="#" class="brand-logo center toggler"><img src="img/Site.png" onclick="toggleDarkLight()" style="margin-left: 250px;" class="center disermenu"></a>
+          <!--<ul class="right">
+            <li>
+              <a name="dark_light" class="toggler" onclick="toggleDarkLight()"><i class="material-icons padding">brightness_2</i></a>
+            </li>
+          </ul>-->
         </div>
       </nav>
     </div>
@@ -91,104 +64,62 @@
 
   <main>
 
+    <div id="fullpage">
+	<div class="section" style="background:url(img/cyber01.jpg);">Some section</div>
+	<div class="section" style="background:url(img/cyber02.jpg);">
 
+  <div class="row">
+    <div class="col s12 m3">
+      <div class="card-panel blue">
+        <span class="white-text"><table class="striped">
+        <thead>
+          <tr>
+              <th>Name</th>
+              <th>Item Name</th>
+              <th>Item Price</th>
+          </tr>
+        </thead>
 
-    <div class="parallax-container">
-      <div class="parallax">
-        <img id="presentation" src="img/diser2.jpg">
+        <tbody>
+          <tr>
+            <td>Alvin</td>
+            <td>Eclair</td>
+            <td>$0.87</td>
+          </tr>
+          <tr>
+            <td>Alan</td>
+            <td>Jellybean</td>
+            <td>$3.76</td>
+          </tr>
+          <tr>
+            <td>Jonathan</td>
+            <td>Lollipop</td>
+            <td>$7.00</td>
+          </tr>
+        </tbody>
+      </table>
+        </span>
       </div>
     </div>
-    <div class="section">
-      <div class="row container">
-        <h2 class="header">Quem somos?</h2>
+  </div>
 
-
-
-
-
-        <ul class="collapsible popout">
-          <li>
-            <div class="collapsible-header flow-text">
-              <i class="material-icons">lightbulb_outline</i>Criação
-            </div>
-            <div class="collapsible-body white flow-text">
-              <ul class="collection">
-                <li class="collection-item">Análise e criação de planos de comunicação</li>
-                <li class="collection-item">Construção de linhas de comunicação iniciais</li>
-                <li class="collection-item">Planeamento e implementação de marketing digital</li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <div class="collapsible-header flow-text">
-              <i class="material-icons">build</i>Desenvolvimento
-            </div>
-            <div class="collapsible-body white flow-text">
-              <ul class="collection">
-                <li class="collection-item">Reinvenção de marca</li>
-                <li class="collection-item">Análise de necessidades comunicativas</li>
-                <li class="collection-item">Gestão de plataformas de comunicação</li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <div class="collapsible-header flow-text">
-              <i class="material-icons">new_releases</i>Divulgação
-            </div>
-            <div class="collapsible-body white flow-text">
-              <ul class="collection">
-                <li class="collection-item">Especialização no turismo e divulgação do território e da cultura</li>
-                <li class="collection-item">Gestão e organização de eventos de promoção cultural e educativa</li>
-                <li class="collection-item">Projetos socioculturais</li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-
-
-
-
-
-      </div>
-    </div>
-
-
-
+  </div>
+	<div class="section" style="background:url(img/cyber03.jpg);">Some section</div>
+	<div class="section">Some section</div>
+</div>
+  <img src="img/cyber01.jpg">
 
   </main>
 
-  <footer>
 
-    <footer class="page-footer">
-      <div class="container">
-        <div class="row">
-          <!--<div class="col l6 s12">
-            <h5 class="white-text">Footer Content</h5>
-            <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-          </div>-->
-          <div class="col l4 offset-l2 s12 right">
-            <!--<h5 class="white-text">Links</h5>-->
-            <ul>
-              <li><a class="white-text text-lighten-3" href="mailto:disermultimedia@gmail.com">disermultimedia@gmail.com</a></li>
-              <li><a class="white-text text-lighten-3" href="#!">Telemovel 1: 259 *** ***</a></li>
-              <li><a class="white-text text-lighten-3" href="#!">Telemovel 2: 91 **** ***</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="footer-copyright">
-        <div class="container">
-          © 2018 diSer
-        </div>
-      </div>
-    </footer>
-  </footer>
 
-  <!--JavaScript at end of body for optimized loading-->
+
+
   <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script type="text/javascript" src="js/preloader.js"></script>
   <script type="text/javascript" src="js/darkswitch.js"></script>
+  <script type="text/javascript" src="js/jquery.fullpage.min.js"></script>
   <script type="text/javascript">
     $(document).ready(function() {
       $('.parallax').parallax();
@@ -196,6 +127,7 @@
       $('.sidenav').sidenav();
       $('body').addClass('loaded');
       $('.collapsible').collapsible();
+      $('#fullpage').fullpage();
     });
     $(window).scroll(function() {
       if ($(document).scrollTop() > 300) {

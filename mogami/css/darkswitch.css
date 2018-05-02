@@ -61,13 +61,15 @@ nav,
 nav.navbar.transparent .nav-wrapper i,
 nav.navbar.transparent a.sidenav-trigger,
 nav.navbar.transparent a.sidenav-trigger i {
-  height: 75px
+  height: 200px
 }
 
 
 body.dark-mode {
   background-color: #2d2d2d;
   color: #eee;
+     -webkit-transition: all 0.4s ease;
+     transition: all 0.4s ease;
 }
 body.dark-mode a {
   color: #eee;
@@ -123,6 +125,8 @@ body.dark-mode nav.navbar.transparent {
 body.light-mode {
   background-color: #eee;
   color: #111;
+     -webkit-transition: all 0.4s ease;
+     transition: all 0.4s ease;
 }
 body.light-mode a {
   color: #111;
