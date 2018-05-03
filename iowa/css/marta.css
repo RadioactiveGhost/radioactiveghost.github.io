@@ -10,7 +10,7 @@
   left: 0;
   top:0;
   z-index: 999;
-  height: 150px;
+  height: 130px;
   background-color: white;
   transition-duration: 250ms;
 }
@@ -27,7 +27,7 @@ a {
 
 #headerlogo {
   float:left;
-  margin: 30px 0 30px 50px;
+  margin: 20px 0 30px 50px;
   height:90px;
 }
 #headercont {
@@ -41,7 +41,7 @@ a {
   float:left;
   height: 96px;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 35px;
   transition-duration: 250ms;
 
 }
@@ -63,7 +63,7 @@ a {
 }
 
 body {
-  padding-top: 150px;
+  padding-top: 130px;
   background-color: #ddd;
 
    font-family: Phenomena;
