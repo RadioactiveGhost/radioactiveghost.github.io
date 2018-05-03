@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+  <title>Portfolio</title>
+  <link type="text/css" rel="stylesheet" href="css/marta.css" />
+
+</head>
+
+
+
+<body>
+  <nav>
+    <div id="header">
+      <img id="headerlogo" src="img/Logotipo.png">
+      <div id="headercont">
+        <a href="#">
+          <div class="headerlink">
+            <p>HOME</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="headerlink">
+            <p>ABOUT</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="headerlink">
+            <p>WORKS</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="headerlink">
+            <p>CONTACTS</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <div class="content"></div>
+  <div class="content"></div>
+  <script
+			  src="https://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			  crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $(window).scroll(function() {
+      if ($(document).scrollTop() > 600) {
+        $('nav').addClass('transparent');
+      } else {
+        $('nav').removeClass('transparent');
+      }
+    });
+  </script>
+</body>
+
+</html>
