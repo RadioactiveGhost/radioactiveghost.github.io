@@ -1,3 +1,12 @@
+
+body {
+  margin: 0;
+  padding-top: 130px;
+  background-color: #ddd;
+
+   font-family: Phenomena;
+}
+
 @font-face {
     font-family: Phenomena;
     src: url(Phenomena-Regular.otf);
@@ -19,6 +28,7 @@
   background-color: white;
   transition-duration: 250ms;
 }
+
 nav.transparent #header{
   background: rgba(255, 255, 255, 0);
 
@@ -34,7 +44,12 @@ a {
   float:left;
   margin: 20px 0 30px 50px;
   height:90px;
+}
+#headerlogo2 {
+  margin-top: 20px;
+  margin-left:6px;
   transition-duration: 500ms;
+  height: 90px;
 }
 img.transparent {
   opacity: 0 !important;
@@ -57,15 +72,7 @@ img.transparent {
 .headerlink.transparent {
   color:white;
 }
-/*
-#C8F0D6
-#58b390
-#6ECFA6
-#448C6F
-#285945
-#133D2B
-#FFAD08
-*/
+
 .headerlink:hover {
   border-bottom: 3px solid #6ECFA6;
   color: #6ECFA6;
@@ -75,33 +82,21 @@ img.transparent {
 #headercont div a {
   padding: 0 15px 0 15px;
 }
-
-body {
-  margin: 0;
-  padding-top: 130px;
-  background-color: #ddd;
-
-   font-family: Phenomena;
-}
-
-
-#firstimg {
+.firstimg {
   width:100%;
-  position: absolute;
-  right:0;
-  left: 0;
 }
 #firstimgtext {
-  width:100%;
+  width: 100%;
   position: absolute;
   transition-duration: 500ms;
 }
+
 #getintouch {
   padding: 10px 30px 10px 30px;
   background-color: #C8F0D6;
   color: #133D2B;
   position: absolute;
-  margin-top: 35%;
+  margin-top: 34%;
   margin-left: 51.5%;
   transition-duration: 250ms;
   border-radius: 5px;
@@ -112,54 +107,41 @@ body {
 box-shadow: inset 3px 3px 21px 0px rgba(0,0,0,0.4);
 }
 
-#firstdivider {
-  width: 100%;
-  height: 200px;
+.divider {
+  height: 150px;
   background-color: #999;
   position: absolute;
-  margin-top: 44%;
   left:0;
   text-align: center;
 }
-#firstdivider a img {
+.divider a img {
   margin: 40px 70px 20px 70px;
   border-radius: 100px;
+  width: 40px;
 }
 .greenbar {
   background-color: #C8F0D6;
-  margin: 20px 100px 0 100px;
-  height: 5px;
-}
-
-#secondimg {
-  margin-top: 1045px;
-  z-index: 1;
-  position: absolute;
-  right:0;
-  left: 0;
-
-}
-
-div#aboutdiv {
-  position: relative;
-  /*z-index: 999;*/
-  left: 0;
-  right: 0;
-  margin-top: 0;
+  margin: 12px 100px 0 100px;
+  height: 3px;
 }
 div#aboutmediv {
   font-family: QuicksandBook;
+  position: absolute;
   letter-spacing: 4px;
-  font-size: 34px;
+  font-size: 1.6em;
   background-color: #58b390;
   color: white;
-  margin-top: 0;
+  margin-top: 9%;
   border-radius: 10px;
-  margin-left:200px;
+  margin-left:10%;
   padding:20px;
 }
+div#aboutmediv p p {font-size: 1px;}
 #aboutmediv hr {
   border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(102, 102, 102, 0.75), rgba(0, 0, 0, 0));
+}
+.abouttext {
+  font-size: 0.6em;
 }
 .circulo {
   height: 16px;
