@@ -135,6 +135,10 @@ div#aboutmediv {
   border-radius: 10px;
   margin-left:10%;
   padding:20px;
+  transition-duration: 500ms;
+}
+div#aboutmediv.transparent {
+  opacity: 0 !important;
 }
 div#aboutmediv p p {font-size: 1px;}
 #aboutmediv hr {

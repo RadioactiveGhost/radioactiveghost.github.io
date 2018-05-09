@@ -50,7 +50,7 @@
 
     <div style="clear:both;"></div>
 
-    <div style="width:100%; left:0;position: relative; float: left;" class="divider">
+    <div style="width:100%; left:0;position: relative; float: left; margin-top:-5px;" class="divider">
         <div class="greenbar"></div>
         <a href="https://www.instagram.com/marta.padua/" target="_blank">
           <img src="img/icon_insta.png">
@@ -67,7 +67,7 @@
     <div style="clear:both;"></div>
 
     <div style="width:100%; left:0;position: relative; float: left;">
-      <div id="aboutmediv">
+      <div id="aboutmediv" class="transparent">
         <p>Life <span style="color:#FFAD08">=</span> Drink coffee, play Sims <br> and watch movies with my <br>love. I'm a native digital in <br>Portugal and I feel privileged <br>to do cool sh*ts.</p>
             <p class="abouttext"><img class="circulo" src="img/circulo.png">NAME: Marta Pádua</p>
           <hr>
@@ -91,8 +91,15 @@
         $('nav').removeClass('transparent');
         $('.disappear').removeClass('transparent');
         $('.headerlink').removeClass('transparent');
+        $('#aboutmediv').addClass('transparent');
       }
 
+        if ($(document).scrollTop() > 550) {
+        $('#aboutmediv').removeClass('transparent');
+        } else {
+
+          $('#aboutmediv').addClass('transparent');
+        }
       if ($(document).scrollTop() > 250) {
         $('#firstimgtext').addClass('transparent');
       } else {
