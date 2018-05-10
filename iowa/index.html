@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <link type="text/css" rel="stylesheet" href="css/marta.min.css" />
   <title>Portfolio</title>
-  <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
   <style>
   </style>
 </head>
@@ -45,7 +45,9 @@
 
   <div style="position:relative;">
     <div style="width:100%; left:0;position: relative;display:table-cell; vertical-align:middle; text-align:center">
-      <div id="getintouch"><a href="#">GET IN TOUCH</a></div>
+      <a href="#">
+        <div id="getintouch">GET IN TOUCH</div>
+      </a>
       <img id="firstimgtext" src="img/texto.png">
       <img class="firstimg" src="img/img02.png">
     </div>
@@ -53,17 +55,17 @@
     <div style="clear:both;"></div>
 
     <div style="width:100%; left:0;position: relative; float: left; margin-top:-5px;" class="divider">
-        <div class="greenbar"></div>
-        <a href="https://www.instagram.com/marta.padua/" target="_blank">
+      <div class="greenbar"></div>
+      <a href="https://www.instagram.com/marta.padua/" target="_blank">
           <img src="img/icon_insta.png">
         </a>
-        <a href="https://www.facebook.com/marta.padua.54" target="_blank">
+      <a href="https://www.facebook.com/marta.padua.54" target="_blank">
           <img src="img/icon_face.png">
         </a>
-        <a href="https://www.behance.net/martarmpadee09/" target="_blank">
+      <a href="https://www.behance.net/martarmpadee09/" target="_blank">
           <img src="img/icon_behance.png">
         </a>
-        <div class="greenbar"></div>
+      <div class="greenbar"></div>
     </div>
 
     <div style="clear:both;"></div>
@@ -71,21 +73,38 @@
     <div style="width:100%; left:0;position: relative; float: left;">
       <div id="aboutmediv" class="transparent">
         <p>Life <span style="color:#FFAD08">=</span> Drink coffee, play Sims <br> and watch movies with my <br>love. I'm a native digital in <br>Portugal and I feel privileged <br>to do cool sh*ts.</p>
-            <p class="abouttext"><img class="circulo" src="img/circulo.png">NAME: Marta Pádua</p>
-          <hr>
-            <p class="abouttext"><img class="circulo" src="img/circulo.png">EMAIL: marta_machado96@hotmail.com</p>
-          <hr>
-            <p class="abouttext"><img class="circulo" src="img/circulo.png">NATIONALITY: Portuguese</p>
-          <hr>
+        <p class="abouttext"><img class="circulo" src="img/circulo.png">NAME: Marta Pádua</p>
+        <hr>
+        <p class="abouttext"><img class="circulo" src="img/circulo.png">EMAIL: marta_machado96@hotmail.com</p>
+        <hr>
+        <p class="abouttext"><img class="circulo" src="img/circulo.png">NATIONALITY: Portuguese</p>
+        <hr>
       </div>
       <img id="estrela" src="img/estrelinha.png">
-      <div id="quote1"><p>
-        I’m not looking to change the world,<br/>
-I just want to reduce the number of regrets<br/>
-I have and do enough so you can to.
-      </p></div>
+      <div id="quote1">
+        <p>
+          I’m not looking to change the world,<br/> I just want to reduce the number of regrets<br/> I have and do enough so you can to.
+        </p>
+      </div>
+      <div style="width:110%; height:400px; background-color:#133D2B; position: absolute; margin-top: 32%; margin-left: -30px;transform:rotate(-3deg);">
+        <div style="transform: rotate(3deg); color: white; margin-left:8%; margin-top:1%; font-size: 2em;float:left;">
+          <p><span style="color:#6ECFA6">What I’ll do for you </span><br> I’ll design interfaces, icons, print products, and<br> anything you need to make your product or<br> service find it’s place. To top things off, it will be<br> high quality and within
+            your budget.</p>
+        </div>
+        <div style="transform: rotate(3deg); color: white; margin-right:13%; margin-top:3.5%; font-size: 2em;float:right; text-align: right;">
+          <p><span style="color:#6ECFA6">Where I live</span><br> I recently graduated from the university in <br> Comunication and Multimedia at UTAD. I also have <br>a professional course in Graphic Design.<br>
+
+        </div>
+      </div>
       <img class="firstimg" src="img/img02.png">
     </div>
+
+    <div style="clear:both;"></div>
+
+    <div style="width:100%; left:0;position: relative; float: left;">
+      <div style="width:1920px;height:700px; background-color:white; margin-top:4%;"></div>
+    </div>
+
   </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
@@ -102,12 +121,12 @@ I have and do enough so you can to.
         $('#aboutmediv').addClass('transparent');
       }
 
-        if ($(document).scrollTop() > 550) {
+      if ($(document).scrollTop() > 550) {
         $('#aboutmediv').removeClass('transparent');
-        } else {
+      } else {
 
-          $('#aboutmediv').addClass('transparent');
-        }
+        $('#aboutmediv').addClass('transparent');
+      }
       if ($(document).scrollTop() > 250) {
         $('#firstimgtext').addClass('transparent');
       } else {
