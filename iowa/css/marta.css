@@ -175,3 +175,18 @@ div#aboutmediv p p {font-size: 1px;}
   height: 16px;
   margin-right: 10px;
 }
+.interest {
+  float:right; padding: 1% 10% 0 0; width: 60%;
+}
+
+.interests {
+  min-width: 30%;
+  font-size: 250%;
+  color: #fff;
+  background:#999;
+  padding: 1%;
+  border-radius: 5px;
+  float:right;
+  margin-left:6%;
+  margin-bottom: 1%;
+}
