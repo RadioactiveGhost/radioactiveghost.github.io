@@ -144,7 +144,7 @@ div#aboutmediv {
   margin-top: 9%;
   border-radius: 10px;
   margin-left:10%;
-  padding:20px;
+  padding:0 10px 0 10px;
   transition-duration: 500ms;
 }
 div#aboutmediv.transparent {
