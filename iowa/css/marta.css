@@ -164,9 +164,9 @@ div#aboutmediv p p {font-size: 1px;}
 #quote1 {
   position: absolute;
   color:white;
-  margin-left: 50%;
-  margin-top: 15%;
-  font-size: 300%;
+  margin-left: 57%;
+  margin-top: 10%;
+  font-size: 3em;
 }
 .abouttext {
   font-size: 0.6em;
@@ -176,7 +176,7 @@ div#aboutmediv p p {font-size: 1px;}
   margin-right: 10px;
 }
 .interest {
-  float:right; padding: 1% 10% 0 0; width: 60%;
+  float:right; padding: 1% 8% 0 0; width: 50%;
 }
 
 .interests {
@@ -187,6 +187,6 @@ div#aboutmediv p p {font-size: 1px;}
   padding: 1%;
   border-radius: 5px;
   float:right;
-  margin-left:6%;
+  margin-left:2%;
   margin-bottom: 1%;
 }
