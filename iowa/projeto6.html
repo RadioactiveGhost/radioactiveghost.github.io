@@ -23,7 +23,7 @@
     #slides {
       display: grid;
       height: 100%;
-      margin-bottom:5%;
+      margin-bottom: 5%;
     }
 
     .mySlides {
@@ -74,8 +74,7 @@
         <div style="margin:10%;">
           <h1 style="font-family: Phenomena;color:#448C6F; font-size:40px;">Ali</h1>
           <div style="width:54%;height:2px;background-color:#448C6F; margin-top:-20px;"></div>
-          <p style="font-size: 25px;">ALI é o novo modelo da motorola.<br>
-            ALI is the new model of the motorola.
+          <p style="font-size: 25px;">ALI is the new model of the motorola.
           </p>
           <p style="margin-top:40px;font-size:25px;"> - Branding Design<br><br> - Web<br><br> - Publicity</p>
         </div>
@@ -92,64 +91,62 @@
         </p>
       </div>
       <div>
-        <img src="img/ali0.jpg" style="float:right;width:35%; border:1px solid #58b390;margin-right:8%; margin-top:5%;"></div>
-    </div>
-    <div style="text-align: center;">
-      <img src="img/IMAGEM2.png" style="width:70%; margin-top:5%;">
-    </div>
-    <div style="width:90%;height:3px;background-color:#448C6F;margin:auto;margin-bottom:5%;"></div>
-
-    <div id="slides">
-      <img class="mySlides" src="img/ali1.jpg">
-      <img class="mySlides" src="img/ali2.jpg">
-      <img class="mySlides" src="img/ali3.jpg">
+        <img src="img/ali0.jpg" style="float:right;width:35%;margin-right:8%; margin-top:5%;"></div>
     </div>
 
-  </div>
+    <div style="float:left;width:90%;height:3px;background-color:#448C6F;margin:5% 5% 5% 5%;"></div>
+    <div style="clear:both;">
+      <div style="margin-top:5%;" id="slides">
+        <img class="mySlides" src="img/ali1.jpg">
+        <img class="mySlides" src="img/ali2.jpg">
+        <img class="mySlides" src="img/ali3.jpg">
+      </div>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-  <script type="text/javascript">
-    var slideIndex = 0;
-    showSlides();
+    </div>
 
-    function showSlides() {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) {
-        slideIndex = 1
-      }
-      slides[slideIndex - 1].style.display = "block";
-      setTimeout(showSlides, 2000); // Change image every 2 seconds
-    }
-    $(window).scroll(function() {
-      if ($(document).scrollTop() > 550) {
-        $('nav').addClass('transparent');
-        $('.disappear').addClass('transparent');
-        $('.headerlink').addClass('transparent');
-      } else {
-        $('nav').removeClass('transparent');
-        $('.disappear').removeClass('transparent');
-        $('.headerlink').removeClass('transparent');
-        $('#aboutmediv').addClass('transparent');
-      }
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      var slideIndex = 0;
+      showSlides();
 
-      if ($(document).scrollTop() > 550) {
-        $('#aboutmediv').removeClass('transparent');
-      } else {
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+      $(window).scroll(function() {
+        if ($(document).scrollTop() > 550) {
+          $('nav').addClass('transparent');
+          $('.disappear').addClass('transparent');
+          $('.headerlink').addClass('transparent');
+        } else {
+          $('nav').removeClass('transparent');
+          $('.disappear').removeClass('transparent');
+          $('.headerlink').removeClass('transparent');
+          $('#aboutmediv').addClass('transparent');
+        }
 
-        $('#aboutmediv').addClass('transparent');
-      }
-      if ($(document).scrollTop() > 250) {
-        $('#firstimgtext').addClass('transparent');
-      } else {
-        $('#firstimgtext').removeClass('transparent');
-      }
-    });
-  </script>
+        if ($(document).scrollTop() > 550) {
+          $('#aboutmediv').removeClass('transparent');
+        } else {
+
+          $('#aboutmediv').addClass('transparent');
+        }
+        if ($(document).scrollTop() > 250) {
+          $('#firstimgtext').addClass('transparent');
+        } else {
+          $('#firstimgtext').removeClass('transparent');
+        }
+      });
+    </script>
 </body>
 
 
