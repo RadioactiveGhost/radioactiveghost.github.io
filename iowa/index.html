@@ -7,6 +7,10 @@
   <title>Portfolio</title>
   <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
   <style>
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
   </style>
 </head>
 
@@ -17,22 +21,22 @@
     <div id="header">
       <img id="headerlogo" src="img/icon-logo.png"><img id="headerlogo2" class="disappear" src="img/logo.png">
       <div id="headercont">
-        <a href="#">
+        <a href="#Home">
           <div class="headerlink">
             <p>HOME</p>
           </div>
         </a>
-        <a href="#">
+        <a href="#About">
           <div class="headerlink">
             <p>ABOUT</p>
           </div>
         </a>
-        <a href="#">
+        <a href="#Works">
           <div class="headerlink">
             <p>WORKS</p>
           </div>
         </a>
-        <a href="#">
+        <a href="contactos.html">
           <div class="headerlink">
             <p>CONTACTS</p>
           </div>
@@ -44,7 +48,7 @@
 
 
   <div style="position:relative;">
-    <div style="width:100%; left:0;position: relative;display:table-cell; vertical-align:middle; text-align:center">
+    <div id="Home" style="width:100%; left:0;position: relative;display:table-cell; vertical-align:middle; text-align:center">
       <a href="#">
         <div id="getintouch">GET IN TOUCH</div>
       </a>
@@ -70,7 +74,7 @@
 
     <div style="clear:both;"></div>
 
-    <div style="width:100%; left:0;position: relative; float: left;">
+    <div id="About" style="width:100%; left:0;position: relative; float: left;">
       <div id="aboutmediv" class="transparent">
         <p>Life <span style="color:#FFAD08">=</span> Drink coffee, play Sims <br> and watch movies with my <br>love. I'm a native digital in <br>Portugal and I feel privileged <br>to do cool sh*ts.</p>
         <p class="abouttext"><img class="circulo" src="img/circulo.png">NAME: Marta Pádua</p>
@@ -135,6 +139,31 @@
       <div style="clear:both; background-color: #133D2B;text-align: center; padding-bottom:10px;padding-top:20px;">
         <img src="img/software_texto.png" style="margin-top:-60px;width:20em; position:absolute;">
         <img src="img/software.png" style="width:50%;">
+      </div>
+    </div>
+    <div style="clear:both;"></div>
+
+    <div style="width:100%; left:0;position: relative; float: left;display: grid;margin-top:2%;">
+      <img src="img/texto2.png" style="width:80%;margin: auto;" />
+    </div>
+
+    <div style="clear:both;"></div>
+
+    <div id="Works" style="width:100%; left:0;position: relative; float: left;margin-top:2%;">
+      <div style="float:left;width:22%; padding:1%;">
+        <a href="projeto1.html"><img src="img/1.png" style="width:100%;"></a>
+        <br>
+        <a href="projeto4.html"><img src="img/4.png" style="width:100%;margin-top:2%;"></a>
+      </div>
+
+      <div style="float:left; width:26.7%; padding:1%;">
+        <a href="projeto2.html"><img src="img/2.png" style="width:100%;"></a><br>
+        <a href="projeto7.html"><img src="img/5.png" style="width:100%;margin-top:2%;"></a>
+      </div>
+      <div style="float:left;width:45%; padding:1%;">
+      <a href="projeto6.html"><img src="img/3.png" style="width:100%;"></a><br>
+        <a href="projeto5.html"><img src="img/6.png" style="width:48%;margin-right:3%;margin-top:2%"></a>
+          <a href="projeto3.html"><img src="img/7.png" style="width:48%;"></a>
       </div>
     </div>
 

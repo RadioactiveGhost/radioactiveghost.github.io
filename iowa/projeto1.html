@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link type="text/css" rel="stylesheet" href="css/marta.min.css" />
+  <title>Portfolio - TWITCHY RABBIT</title>
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+  <style>
+    body {
+      background-color: white;
+    }
+
+    .top1 {
+      font-size: 15px;
+      color: #448C6F;
+    }
+
+    .bottom1 {
+      font-size: 25px;
+    }
+
+    #slides {
+      display: grid;
+      height: 100%;
+      margin-bottom:5%;
+    }
+
+    .mySlides {
+      max-width: 100%;
+      max-height: 100vh;
+      margin: auto;
+    }
+  </style>
+</head>
+
+<body style="margin:0;">
+
+
+  <nav>
+    <div id="header">
+      <img id="headerlogo" src="img/icon-logo.png"><img id="headerlogo2" class="disappear" src="img/logo.png">
+      <div id="headercont">
+        <a href="index.html#Home">
+          <div class="headerlink">
+            <p>HOME</p>
+          </div>
+        </a>
+        <a href="index.html#About">
+          <div class="headerlink">
+            <p>ABOUT</p>
+          </div>
+        </a>
+        <a href="index.html#Works">
+          <div class="headerlink">
+            <p>WORKS</p>
+          </div>
+        </a>
+        <a href="contactos.html">
+          <div class="headerlink">
+            <p>CONTACTS</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <div id="stuff" style="position:relative; font-family: QuicksandBook;">
+    <div style="width: 100%; height:100%;">
+      <img src="img/IMAGEM1.jpg" style="width:60%; float:left;">
+      <div style="float:right;width:40%;padding-bottom:11.5%;">
+        <div style="margin:10%;">
+          <h1 style="font-family: Phenomena;color:#448C6F; font-size:40px;">TWITCHY RABBIT</h1>
+          <div style="width:54%;height:2px;background-color:#448C6F; margin-top:-20px;"></div>
+          <p style="font-size: 25px;">Twitchy Rabbit is an email<br> marketing platform similar<br> to MailChimp and Twitchy<br> the Rabbit is our mascot.</p>
+          <p style="margin-top:40px;font-size:25px;"> - Branding & Identity<br><br> - Logo Redesign</p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div style="clear:both;float:left;margin:5% 5% 5% 9%;">
+        <p>
+          <span class="top1">CLIENT</span><br>
+          <span class="bottom1">AMBER DALTON</span><br>
+          <div style="width:170%;height:1px;background-color:#448C6F;margin:3% 0 6% 0;"></div>
+          <span class="top1">INDUSTRY</span><br>
+          <span class="bottom1">MARKETING EMAIL</span><br>
+          <div style="width:170%;height:1px;background-color:#448C6F;margin:3% 0 6% 0;"></div>
+          <span class="top1">SERVICES</span><br>
+          <span class="bottom1">DESIGN</span><br>
+        </p>
+      </div>
+      <div>
+        <img src="img/movement_animation.gif" style="float:right;width:35%; border:1px solid #58b390;margin-right:8%; margin-top:5%;"></div>
+    </div>
+    <div style="text-align: center;">
+      <img src="img/IMAGEM2.png" style="width:70%; margin-top:5%;">
+    </div>
+    <div style="width:90%;height:3px;background-color:#448C6F;margin:auto;margin-bottom:5%;"></div>
+
+    <div id="slides">
+      <img class="mySlides" src="img/TR1.jpg">
+      <img class="mySlides" src="img/TR2.jpg">
+      <img class="mySlides" src="img/TR3.jpg">
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1
+      }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    $(window).scroll(function() {
+      if ($(document).scrollTop() > 550) {
+        $('nav').addClass('transparent');
+        $('.disappear').addClass('transparent');
+        $('.headerlink').addClass('transparent');
+      } else {
+        $('nav').removeClass('transparent');
+        $('.disappear').removeClass('transparent');
+        $('.headerlink').removeClass('transparent');
+        $('#aboutmediv').addClass('transparent');
+      }
+
+      if ($(document).scrollTop() > 550) {
+        $('#aboutmediv').removeClass('transparent');
+      } else {
+
+        $('#aboutmediv').addClass('transparent');
+      }
+      if ($(document).scrollTop() > 250) {
+        $('#firstimgtext').addClass('transparent');
+      } else {
+        $('#firstimgtext').removeClass('transparent');
+      }
+    });
+  </script>
+</body>
+
+
+
+</html>

@@ -12,7 +12,7 @@
 body {
   margin: 0;
   padding-top: 130px;
-  background-color: #ddd;
+  background-color: #ffffff;
 
    font-family: Phenomena;
 }
@@ -20,6 +20,11 @@ body {
 @font-face {
     font-family: Phenomena;
     src: url(Phenomena-Regular.otf);
+}
+@font-face {
+  font-family: Phenomena;
+  src: url(Phenomena-Bold.otf);
+  font-weight: bold;
 }
 @font-face {
   font-family: QuicksandBook;
@@ -81,6 +86,8 @@ img.transparent {
 }
 .headerlink.transparent {
   color:white;
+
+	text-shadow: 0 0 5px #133D2B;
 }
 
 .headerlink:hover {

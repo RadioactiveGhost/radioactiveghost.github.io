@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link type="text/css" rel="stylesheet" href="css/marta.min.css" />
+  <title>Portfolio</title>
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+  <style>
+    #stuff {
+      font-family: QuicksandBook;
+      color: rgb(106, 106, 106);
+    }
+
+    input {
+      padding: 12px 20px;
+      box-sizing: border-box;
+      border: 1px solid rgb(131, 131, 131);
+      border-radius: 4px;
+    }
+
+    textarea {
+      padding: 12px 20px;
+      box-sizing: border-box;
+      border: 1px solid rgb(131, 131, 131);
+      border-radius: 8px;
+      width: 70%;
+      height: 100px;
+      float: left;
+    }
+
+    button {
+      font-family: Phenomena;
+      border-radius: 7px;
+      background-color: #133D2B;
+      border: none;
+      color: white;
+      padding: 3px 18px;
+      font-size: 24px;
+      float: right;
+    }
+    img.social {
+      width: 40px;
+      margin: 40px 5px 10px 5px;
+    }
+  </style>
+</head>
+
+<body style="margin:0;">
+
+
+  <nav>
+    <div id="header">
+      <img id="headerlogo" src="img/icon-logo.png"><img id="headerlogo2" class="disappear" src="img/logo.png">
+      <div id="headercont">
+        <a href="index.html#Home">
+          <div class="headerlink">
+            <p>HOME</p>
+          </div>
+        </a>
+        <a href="index.html#About">
+          <div class="headerlink">
+            <p>ABOUT</p>
+          </div>
+        </a>
+        <a href="index.html#Works">
+          <div class="headerlink">
+            <p>WORKS</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="headerlink">
+            <p>CONTACTS</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <div id="stuff" style="position:relative;margin-top:-130px;">
+    <div style="width:55%;height:100vh;background-color:rgb(217, 217, 217);float:left;">
+      <div style="margin:150px 10% 0 20%;padding-top: 30px;">
+        <h1 style="color:#133D2B;font-family:Phenomena;">GET IN TOUCH</h1>
+        <div style="width:150%;height:2px;background-color:#133D2B"></div>
+        <div style="float:left; width:49%;">
+          <h2>Name:</h2><input type="text" style="width:100%;" />
+        </div>
+        <div style="float:right; width:49%;">
+          <h2>Email:</h2><input type="email" style="width:100%;" />
+        </div>
+        <div style="float:left; width:100%;">
+          <h2>Subject:</h2>
+          <input type="text" style="width:100%;" /></div>
+        <div style="float:left; width:100%;">
+          <h2>Message:</h2>
+          <textarea></textarea><button>SUBMIT</button></div>
+      </div>
+    </div>
+
+    <div style="width:45%;height:100vh;background-color:#133D2B;float:right;">
+      <div style="margin:150px 10% 0 10%;padding-top: 30px;">
+        <h1 style="color:#ffffff;font-family:Phenomena;">DETAILS</h1>
+        <div style="width:114%;height:2px;background-color:#ffffff;"></div>
+        <div>
+          <p style="color:#C8F0D6;font-size: 20px; margin:40px 0 0 0;">MARTA PÁDUA</p>
+          <p style="color:#C8F0D6;font-size: 18px; margin:0 0 30px 0;">E-mail:<span style="color:white;">marta_machado96@hotmail.com</span></p>
+        </div>
+        <div style="width:35%;height:2px;background-color:#ffffff"></div>
+        <div><a href="https://www.instagram.com/marta.padua/" target="_blank">
+            <img class="social" src="img/icon_insta.png">
+          </a>
+        <a href="https://www.facebook.com/marta.padua.54" target="_blank">
+            <img class="social" src="img/icon_face.png">
+          </a>
+        <a href="https://www.behance.net/martarmpadee09/" target="_blank">
+            <img class="social" src="img/icon_behance.png">
+          </a>
+        </div>
+          <p style="text-align: right; color:#C8F0D6; font-size: 40px;font-family: Phenomena;font-weight:bold;margin-top:-10px;">
+            <span style="color:#FFAD08">Hi there</span>,<br>
+            thanks for spending your time<br>
+            for writing something to me!
+          </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $(window).scroll(function() {
+      if ($(document).scrollTop() > 550) {
+        $('nav').addClass('transparent');
+        $('.disappear').addClass('transparent');
+        $('.headerlink').addClass('transparent');
+      } else {
+        $('nav').removeClass('transparent');
+        $('.disappear').removeClass('transparent');
+        $('.headerlink').removeClass('transparent');
+        $('#aboutmediv').addClass('transparent');
+      }
+
+      if ($(document).scrollTop() > 550) {
+        $('#aboutmediv').removeClass('transparent');
+      } else {
+
+        $('#aboutmediv').addClass('transparent');
+      }
+      if ($(document).scrollTop() > 250) {
+        $('#firstimgtext').addClass('transparent');
+      } else {
+        $('#firstimgtext').removeClass('transparent');
+      }
+    });
+  </script>
+</body>
+
+
+
+</html>
