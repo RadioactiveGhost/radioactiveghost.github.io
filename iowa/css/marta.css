@@ -108,19 +108,8 @@ img.transparent {
   transition-duration: 500ms;
 }
 
-#getintouch {
-  padding: 10px 30px 10px 30px;
-  background-color: #C8F0D6;
-  color: #133D2B;
-  position: absolute;
-  margin-top: 34%;
-  margin-left: 51.5%;
-  transition-duration: 250ms;
-  border-radius: 5px;
-  border:none;
-}
 #getintouch:hover {
-  cursor: crosshair;
+  cursor: pointer;
   -webkit-box-shadow: inset 3px 3px 21px 0px rgba(0,0,0,0.4);
 -moz-box-shadow: inset 3px 3px 21px 0px rgba(0,0,0,0.4);
 box-shadow: inset 3px 3px 21px 0px rgba(0,0,0,0.4);
