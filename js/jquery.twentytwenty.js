@@ -4,8 +4,8 @@
     var options = $.extend({
       default_offset_pct: 0.5,
       orientation: 'horizontal',
-      before_label: 'Before',
-      after_label: 'After',
+      before_label: 'Vector',
+      after_label: 'Colored',
       no_overlay: false,
       move_slider_on_hover: false,
       move_with_handle_only: true,
@@ -101,8 +101,8 @@
         container.addClass("active");
         offsetX = container.offset().left;
         offsetY = container.offset().top;
-        imgWidth = beforeImg.width(); 
-        imgHeight = beforeImg.height();          
+        imgWidth = beforeImg.width();
+        imgHeight = beforeImg.height();
       };
       var onMove = function(e) {
         if (container.hasClass("active")) {
