@@ -1,0 +1,106 @@
+/* global styles, fonts, variables */
+@font-face {
+    font-family: incons;
+    src: url('../fonts/inconsolata.woff') format('woff');
+}
+
+:root {
+    --main-background-color: #222222;
+    --section-background-color: #171717;
+    --section-border: #0a0a0a;
+    --text-color: #D9D0DE;
+    --title-color: #7149ab;
+    --hover-color: #9e8dbb;
+    --font: incons;
+}
+
+body {
+    background-color: var(--main-background-color);
+    font-family: var(--font);
+    color: var(--text-color);
+}
+
+/* weather styles */
+.weather-block {
+    width: 100px;
+    margin: 60px auto 0 auto;
+    text-align: center;
+}
+
+#weather-icon {
+    font-family: owfont;
+    color: var(--title-color);
+}
+
+#temperature,
+#weather-icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+}
+
+/* search bar styles */
+.search-block {
+    position: relative;
+    width: 35%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+#search-input {
+    padding: 4px;
+    font-size: 16px;
+    font-family: incons;
+    width: 100%;
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    color: var(--text-color);
+    transition: .3s ease-in;
+}
+
+#search-input:hover,
+#search-input.focus {
+    border-bottom: 2px solid var(--text-color);
+}
+
+/* link sections styles */
+.sections {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.section {
+    background-color: var(--section-background-color);
+    border: 1px solid var(--section-border);
+    margin: 2px;
+    padding: 8px;
+    flex: 1;
+    min-width: 160px;
+}
+
+.section-header {
+    color: var(--title-color);
+    margin: 0 0 4px 0;
+}
+
+.section-links {
+    line-height: 1.2;
+}
+
+.section-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    outline: 0;
+}
+
+.section-links a:hover {
+    color: var(--hover-color);
+}
+
+input:focus {
+    outline: none;
+}
