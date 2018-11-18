@@ -1,0 +1,17 @@
+[
+
+    {
+      "title": "event1",
+      "start": "2018-11-01"
+    },
+    {
+      "title": "event2",
+      "start": "2018-11-05",
+      "end": "2018-11-07"
+    },
+    {
+      "title": "event3",
+      "start": "2018-11-09T12:30:00",
+      "allDay": "false"
+    }
+  ]
