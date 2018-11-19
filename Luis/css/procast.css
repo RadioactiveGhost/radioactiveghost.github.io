@@ -5,7 +5,7 @@
 }
 
 body {
-  background: rgb(29, 29, 29);
+  background: rgb(255,255,255);
   padding-top: 100px;
 }
 
@@ -13,9 +13,18 @@ body {
   border-radius: 10px;
   margin: 30px 13% 0 13%;
   padding: 3%;
-  color: #CCCCCC;
-  font-size: 20px;
-  background: rgb(47, 47, 47);
+  color: #111;
+  font-size: 1.5em;
+  background: rgb(231,231,231);
+  box-shadow: 0px 3px 10px grey;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .content {
+        margin-left: 0;
+        margin-right: 0
+    }
 }
 ul {
   list-style: none;
@@ -57,6 +66,8 @@ img {
   display: block;
   margin: 0 auto;
   width: 300px;
+  margin-top:-20px;
+  margin-bottom: -20px;
 }
 
 #topnav {
@@ -65,7 +76,7 @@ img {
   overflow: hidden;
   top: 0;
   color: white;
-  box-shadow: 0px 5px 8px black;
+  box-shadow: 0px 0px 8px grey;
   position: fixed;
   width: 100%;
 }
@@ -78,19 +89,12 @@ img {
   text-decoration: none;
   font-size: 17px;
   width: 140px;
-  margin: 2px 5px 2px 5px
-}
-
-#topnav a:hover {
-  background-color: #A10808;
-  box-shadow: 0 0 10px inset #363636;
-  border-radius: 10px;
+  margin: 3px 5px 2px 5px
 }
 
 #topnav a.current {
   background-color: red;
-  box-shadow: 0 0 10px inset #000;
-  border-radius: 4px;
+  border-radius: 3px;
 }
 
 #switch-lang {
@@ -101,14 +105,40 @@ img {
   height:40px;
   margin:7px;
   border-radius:4px;
+  content: 'PT/EN';
 }
-#switch-lang:hover{
-  border-radius:10px;
-  box-shadow: 0 0 10px inset #363636;
+#switch-lang::after {
+  content: 'PT/EN';
+
+}
+
+
+.calendarInput {
+  float:left;
+  clear:both;
+  border:none;
+  background-color: rgb(184,184,184);
+  font-size: 20px;
+  margin-bottom: 3px;
+  border-bottom: solid rgb(255,131,131) 2px;
+  border-radius: 4px;
+  padding: 3px;
+}
+
+.calendarInput:hover, .calendarInput:active, .calendarInput:focus{
+  background-color: rgb(222,216,216);
+  border-bottom: solid rgb(252,59,59) 2px;
+}
+
+.warning {
+  margin: 3px 0 0 4px;
+  font-weight: bold;
+  color: red;
+  float:left
 }
 
 .fc-left {
-  color: #CCC;
+  color: #222;
 }
 
 table {

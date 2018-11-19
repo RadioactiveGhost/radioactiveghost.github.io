@@ -17,42 +17,89 @@
   <div id="topnav">
     <a href="index.html" lang="pt">Página Principal</a>
     <a href="index.html" lang="en">Home Page</a>
-    <a href="calendar.html" class="current"  lang="pt">Calendário</a>
-    <a href="calendar.html" class="current"  lang="en">Calendar</a>
+    <a href="calendar.html" class="current" lang="pt">Calendário</a>
+    <a href="calendar.html" class="current" lang="en">Calendar</a>
     <a href="tactics.html" lang="pt">Prevenção</a>
     <a href="tactics.html" lang="en">Prevention</a>
     <a href="community.html" lang="pt">Comunidade</a>
     <a href="community.html" lang="en">Community</a>
     <a href="media.html" lang="pt">Média</a>
     <a href="media.html" lang="en">Media</a>
-    <button id="switch-lang">Língua/Language</button>
+    <button id="switch-lang"></button>
   </div>
 
-  <div class="content"><!--<input type="date" id="date"></input><input type="text" id="title"></input><button onclick="addEvent()">Add Event</button>-->
+  <div class="content">
+    <!--<input type="text" id="date" class="calendarInput"></input><span class="warning"><p lang="en"> ATTENTION! format is 2018-01-31 </p><p lang="pt">ATENÇÃO! O formato é 2018-01-31 </p></span><br/>
+    <input type="text" id="title" class="calendarInput"></input><br/>
+    <button onclick="addEvent()">Add Event</button>
+    <button onclick="deleteCookies()">Delete Events</button>-->
+    <select>
+      <option></option>
+      <option>1</option>
+      <option>2</option>
+    </select>
     <div id="calendar"></div>
   </div>
   <script>
     $(function() {
-      $('#calendar').fullCalendar({
-        eventSources: [{
-          url: 'js/events.json',
-          type: 'POST',
+      var check = $.parseJSON($.cookie("events"));
+      //alert(check);
+      if (check == 0 || check == null) {
+        alert("refreshing cookie!")
+        var events = [
 
-          error: function() {
-            alert('Houve um erro ao ir buscar os eventos!');
+          {
+            'title': 'event1',
+            'start': '2018-11-01'
           },
-          color: 'grey'
-        }]
+          {
+            'title': 'event2',
+            'start': '2018-11-05',
+            'end': '2018-11-07'
+          }
+        ]
+
+        $.cookie("events", JSON.stringify(events));
+      } else {
+        //alert("Cookie didn't need refreshing")
+      }
+      var eventsUnString = $.parseJSON($.cookie("events"));
+
+      $('#calendar').fullCalendar({
+        events: eventsUnString
       })
     });
 
+    function deleteCookies() {
+      $.cookie("events", null);
+      location.reload();
+    }
+
     function addEvent() {
+
       var ndate = document.getElementById('date').value;
-      var ntitle = document.getElementById('title').value;
-      events.push({
-        'title': ntitle,
-        'start': ndate
-      })
+      var dateMatch = ndate.match(/^(\d{4})\-(\d{2})\-(\d{2})$/)
+      if (dateMatch === null) {
+        alert('Please input the right format!');
+      } else {
+        alert('inserting new event')
+        var ntitle = document.getElementById('title').value;
+        alert(ntitle);
+        var displayEvent = {
+          id: 1,
+          title: ntitle,
+          start: ndate
+        };
+
+        $('#calendar').fullCalendar('renderEvent', displayEvent, true);
+        var events = $.parseJSON($.cookie("events"));
+        events.push({
+          'title': ntitle,
+          'start': ndate
+        })
+        alert(events);
+        $.cookie("events", JSON.stringify(events));
+      }
     }
   </script>
 
