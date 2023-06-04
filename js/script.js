@@ -1,5 +1,5 @@
 keyBackup = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!#$%&'()*+-,./:;<>?@[]^_{|}~";
-
+document.getElementById("settings").style.display = "none";
 
 
 function setKey(a) {
