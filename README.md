@@ -1,2 +1,0 @@
-# radioactiveghost.github.io
-Hub
