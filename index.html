@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="styles/style.css">
     
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9">
     <title>Converter</title>
     <script src="js/jquery-3.7.0.js"></script>
     <script src="https://kit.fontawesome.com/9930bcff58.js" crossorigin="anonymous"></script>
@@ -22,8 +22,8 @@
                     <input type="text" name="BaseI" id="baseI" class="base" value="10">
             </div>
             <div class="flex-child">
-                <label for="Input">Input</label>
-                    <input type="text" name="Input" id="input">
+                <label for="Input">Input<div class="labelError" id="inputError">X > Base</div></label>
+                    <input type="text" name="Input" id="input" class="input">
             </div>
         </div>
 

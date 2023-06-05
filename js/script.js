@@ -57,12 +57,14 @@ function convert() {
 	var bI = parseInt(document.getElementById("baseI").value);
 	var bO = parseInt(document.getElementById("baseO").value);
 	if (checkBase()) {
-		var decimal = toDecimal(input, bI);
-		var base = toBase(decimal, bO);
-		//var textOut = showBase(bO);
-		//var textOut = textOut.concat(base);
-		output.value = base;
-	}
+		if (checkInput()) {
+				var decimal = toDecimal(input, bI);
+				var base = toBase(decimal, bO);
+				//var textOut = showBase(bO);
+				//var textOut = textOut.concat(base);
+				output.value = base;
+		}
+	}	
 }
 
 function flipBases() {	
@@ -70,6 +72,32 @@ function flipBases() {
 	var bO = document.getElementById("baseO").value;
 	document.getElementById("baseI").value = bO;
 	document.getElementById("baseO").value = bI;
+}
+
+function checkInput() {
+	var input = document.getElementById("input").value;
+	var bI = parseInt(document.getElementById("baseI").value);
+	document.getElementById("input").classList = "input";
+	document.getElementById("inputError").style.display = "none";
+	key = document.getElementById("key").value;
+	check = 0;
+	for (i = 0; i < input.length; i++) {
+		for (j = 0; j < key.length; j++) {
+			if (input[i] == key[j] && j >= bI) {
+				check = 1;
+				break;
+			}
+		}
+		if (check == 1) {break;}
+	}
+	if (check == 1) {
+		document.getElementById("input").classList = "input error";
+		document.getElementById("inputError").style.display = "block";
+		document.getElementById("inputError").innerHTML = input[i]+" ("+j+")"+ " > Base";
+		return 0;
+	} else {
+		return 1;
+	}
 }
 
 function checkBase() {
