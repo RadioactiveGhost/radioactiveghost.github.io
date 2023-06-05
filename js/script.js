@@ -21,14 +21,25 @@ function setKey(a) {
 	}
 }
 
+function changeBase(a, b) {
+	if (a == 1) {
+		document.getElementById("baseI").value = b;
+	}
+	else {
+		document.getElementById("baseO").value = b;
+	}
+}
+
 
 function toggleSection() {
 	var section = document.getElementById("settings");
 	if (section.style.display === "none") {
 		section.style.display = "block";
+		document.getElementById("settingsButton").value = "Hide Settings";
 	}
 	else {
 		section.style.display = "none";
+		document.getElementById("settingsButton").value = "Show Settings";
 	}
 }
 
@@ -69,16 +80,26 @@ function checkBase() {
 	document.getElementById("iError").style.display = "none";
 	document.getElementById("oError").style.display = "none";
 	key = document.getElementById("key").value;
-	if (bI > key.length || bO > key.length) {
+	if (bI > key.length || bO > key.length || bI < 2 || bO < 2) {
 		if (bI > key.length) {
 			document.getElementById("baseI").classList = "base error";
 			document.getElementById("iError").style.display = "block";
 			document.getElementById("iError").innerHTML = "Max "+key.length;
 		}
+		if (bI < 2) {
+			document.getElementById("baseI").classList = "base error";
+			document.getElementById("iError").style.display = "block";
+			document.getElementById("iError").innerHTML = "Min 2";
+		}
 		if (bO > key.length) {
 			document.getElementById("baseO").classList = "base error";
 			document.getElementById("oError").style.display = "block";
 			document.getElementById("oError").innerHTML = "Max "+key.length;
+		}
+		if (bO < 2) {
+			document.getElementById("baseO").classList = "base error";
+			document.getElementById("oError").style.display = "block";
+			document.getElementById("oError").innerHTML = "Min 2";
 		}
 		return 0;
 	} else {
