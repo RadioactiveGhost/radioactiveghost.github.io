@@ -45,7 +45,7 @@ function toggleSection() {
 
 function toggleDark() {
 	var body = document.body;
-	body.classList.toggle("dark-mode");
+	body.classList.toggle("night-mode");
 }
 
 /*input.onkeyup = function() {

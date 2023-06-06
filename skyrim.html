@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/skyrim.css">
+        <link rel="stylesheet" href="styles/skyrim_.css">
+        <title>Skyrim Hardcore</title>
+    </head>
+    <body>
+        <header id="header" class="header">
+            <p class="current">Skyrim Hardcore</p>
+        </header>
+        <script async src="js/header.js"></script> 
+
+        <div class="content">
+            <div class="flex-container">
+                <div class="flex-child">
+                    <h2>Race - 2 Dice to Roll</h2>
+                    <table id="race">
+                        <tr>
+                            <th>Dices</th>
+                            <th>1 to 3</th>
+                            <th>4 to 6</th>
+                        </tr>
+                        <tr>
+                            <td class="dice">1</td>
+                            <td class="race1">Altmer</td>
+                            <td class="race2">Nord</td>
+                        </tr>
+                        <tr>
+                            <td class="dice">2</td>
+                            <td class="race1">Bosmer</td>
+                            <td class="race2">Bretron</td>
+                        </tr>
+                        <tr>
+                            <td class="dice">3</td>
+                            <td class="race1">Dunmer</td>
+                            <td class="race2">Reguard</td>
+                        </tr>
+                        <tr>
+                            <td class="dice">4</td>
+                            <td class="race1">Khajiit</td>
+                            <td class="race2">Imperial</td>
+                        </tr>
+                        <tr>
+                            <td class="dice">5</td>
+                            <td class="race1">Orsimer</td>
+                            <td class="race2">Argonian</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="flex-container">
+                <div class="flex-child">
+                    <div class="diceButton"><i class="fa-solid fa-dice fa-2x" onclick="rollRace()"></i></div>
+                </div>
+                <div class="flex-child">
+                    <input type="text" name="Dice Result" id="raceText">
+                </div>
+            </div>
+        </div>
+        <script src="https://kit.fontawesome.com/9930bcff58.js" crossorigin="anonymous"></script>
+        
+        <div class="box">
+        <table id="race">
+            <tr>
+                <th></th>
+                <th>1 to 3</th>
+                <th>4 to 6</th>
+            </tr>
+            <tr>
+                <th class="dice">1</th>
+                <td class="race1">Altmer</td>
+                <td class="race2">Nord</td>
+            </tr>
+            <tr>
+                <th class="dice">2</th>
+                <td class="race1">Bosmer</td>
+                <td class="race2">Bretron</td>
+            </tr>
+            <tr>
+                <th class="dice">3</th>
+                <td class="race1">Dunmer</td>
+                <td class="race2">Reguard</td>
+            </tr>
+            <tr>
+                <th class="dice">4</th>
+                <td class="race1">Khajiit</td>
+                <td class="race2">Imperial</td>
+            </tr>
+            <tr>
+                <th class="dice">5</th>
+                <td class="race1">Orsimer</td>
+                <td class="race2">Argonian</td>
+            </tr>
+        </table>
+
+        
+        <input type="text" name="Dice Result" id="raceText">
+        </div>        
+        <div class="diceButton"><i class="fa-solid fa-dice fa-2x" onclick="rollRace()"></i></div>
+        <!--<input type="button" value="Roll Dice" onclick="rollRace()">-->
+
+
+        <h2>Skills - 6 Skills, 2 Dice to Roll For Each</h2>
+        <p>First die for category, Second for skill</p>
+        <label>
+            <input type="checkbox" name="hand" id="hand" onclick="handToHand()">Toggle Hand-to-Hand's changes to the skill tree <div class="tooltip"><i class="fa-solid fa-question"></i><span class="tooltiptext">Hand to Hand is a mod that</span></div>
+        </label>
+        <div class="box">
+            <table id="skills">
+                <tr>
+                    <th></th>
+                    <th class="mage">1 or 2</th>
+                    <th class="warrior">3 or 4</th>
+                    <th class="thief">5 or 6</th>
+                </tr>
+                <tr>
+                    <th class="dice">1</th>
+                    <td class="mage">Alteration</td>
+                    <td class="warrior">Archery</td>
+                    <td class="thief">Alchemy</td>
+                </tr>
+                <tr>
+                    <th class="dice">2</th>
+                    <td class="mage">Conjuration</td>
+                    <td class="warrior">Block</td>
+                    <td class="thief">Light Armor</td>
+                </tr>
+                <tr>
+                    <th class="dice">3</th>
+                    <td class="mage">Destruction</td>
+                    <td class="warrior">Heavy Armor</td>
+                    <td class="thief" id="thiefLock">Lockpicking</td>
+                </tr>
+                <tr>
+                    <th class="dice">4</th>
+                    <td class="mage">Enchanting</td>
+                    <td class="warrior">One-Handed</td>
+                    <td class="thief" id="thiefPick">Pickpocket</td>
+                </tr>
+                <tr>
+                    <th class="dice">5</th>
+                    <td class="mage">Illusion</td>
+                    <td class="warrior">Smithing</td>
+                    <td class="thief">Sneak</td>
+                </tr>
+                <tr>
+                    <th class="dice">6</th>
+                    <td class="mage">Restoration</td>
+                    <td class="warrior">Two-Handed</td>
+                    <td class="thief">Speech</td>
+                </tr>
+            </table>
+            
+            <textarea name="" id="skillsText" cols="30" rows="6"></textarea>
+        </div>        
+        <div class="diceButton"><i class="fa-solid fa-dice fa-2x" onclick="rollSkills()"></i></div>
+        <!--<input type="button" value="Roll Dice" onclick="rollSkills()">-->
+
+
+        <h2>Difficulty - 1 Die to Roll</h2>
+        <div class="box">
+            <table id="difficulty">
+                <tr>
+                    <th class="dice">1</th>
+                    <td class="diffCell">Expert</td>
+                </tr>
+                <tr>
+                    <th class="dice">2</th>
+                    <td class="diffCell">Master</td>
+                </tr>
+                <tr>
+                    <th class="dice">3</th>
+                    <td class="diffCell">Legendary</td>
+                </tr>
+            </table>
+            
+            <input type="text" name="Dice Result" id="difficultyText">
+        </div>        
+        <div class="diceButton"><i class="fa-solid fa-dice fa-2x" onclick="rollDifficulty()"></i></div>
+        <!--<input type="button" value="Roll Die" onclick="rollDifficulty()">-->
+
+
+        <h2>Win Conditions - 1 Die to Roll</h2>
+        <div class="box">
+            <table id="win">
+                <tr>
+                    <th class="dice">1</th>
+                    <td class="winCell">Veteran - Reach Level 40</td>
+                </tr>
+                <tr>
+                    <th class="dice">2</th>
+                    <td class="winCell">Millionare - Get 1 000 000 gold (without using exploits</td>
+                </tr>
+                <tr>
+                    <th class="dice">3</th>
+                    <td class="winCell">World-Saver - Complete the Main Quest</td>
+                </tr>
+                <tr>
+                    <th class="dice">4</th>
+                    <td class="winCell">Dawnguard - Complete the Dawnguard DLC</td>
+                </tr>
+                <tr>
+                    <th class="dice">5</th>
+                    <td class="winCell">Dragonborn - Complete the Dragonborn DLC</td>
+                </tr>
+                <tr>
+                    <th class="dice">6</th>
+                    <td class="winCell">Bounty Hunter - Complete 10 bounties</td>
+                </tr>
+            </table>
+        
+            <input type="text" name="Dice Result" id="winText">
+        </div>
+        <div class="diceButton"><i class="fa-solid fa-dice fa-2x" onclick="rollWin()"></i></div>
+        <!--s<input type="button" value="Roll Die" onclick="rollWin()">-->
+
+        <div id="extraOptions">
+            <h2>Character Alignment</h2>
+            <div class="box">
+                <table id="alignment">
+                    <tr>
+                        <th></th>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                    </tr>
+                    <tr>
+                        <th>1</th>
+                        <td class="lawful">Lawful Good</td>
+                        <td class="neutral">Neutral Good</td>
+                        <td class="chaotic">Chaotic Good</td>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <td class="lawful">Lawful Neutral</td>
+                        <td class="neutral">True Neutral</td>
+                        <td class="chaotic">Chaotic Neutral</td>
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <td class="lawful">Lawful Evil</td>
+                        <td class="neutral">Neutral Evil</td>
+                        <td class="chaotic">Chaotic Evil</td>
+                    </tr>
+                </table>
+                <input type="text" name="Alignment" id="alignmentText">
+            </div>
+            <div class="diceButton"><i class="fa-solid fa-dice fa-2x" onclick="rollAlignment()"></i></div>
+            <!--<input type="button" value="Roll Dice" onclick="rollAlignment()">-->
+
+        </div>
+        <script src="js/skyrim.js"></script> 
+    </body>
+</html> 

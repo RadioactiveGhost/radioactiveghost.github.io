@@ -1,0 +1,92 @@
+#settings {
+    display: none;
+}
+
+#settings .key {
+    
+    width: 88% !important;
+}
+
+label {
+    color: var(--primary-variant-2);
+    font-weight: bold;
+    display: block;
+    margin-left: 10px;
+}
+.labelError {
+    display:none;
+    float:right;
+    margin-right:10%;
+    font-size: smaller;
+    color: var(--error);
+}
+
+#inputError {
+    font-size: x-small;
+}
+
+
+
+.error {
+    box-shadow: inset 0px 3px 3px var(--error);
+    border-bottom: solid 2px var(--error) !important;
+}
+
+.error:focus {
+    box-shadow: inset 0px 1px 2px var(--error) !important;
+    border-bottom: solid 2px var(--error) !important;
+}
+
+
+@media screen and (max-width: 960px) {
+    input[type=text] {
+        width: 100px !important;
+    }
+    input[type=button] {
+        min-width: fit-content;
+    }
+}
+
+input[type=button]:active {
+    background: var(--primary-variant-2) !important;
+}
+
+input[type=button].prefab {
+    min-width: 40px !important;
+    border: 1px solid var(--font-dark) !important;
+    background: none;
+    color: var(--secondary);
+    margin: 5px !important;
+    padding: 0 8px;
+    font-size: smaller !important;
+}
+
+.night-mode input[type="button"].prefab {
+    border: 1px solid var(--secondary-variant) !important;
+    color: var(--secondary-variant);
+}
+
+input[type="button"].prefab:hover {
+    background:#ffb84d81;
+}
+
+input[type="button"].prefab:active {
+    color: #fff;
+    border: 1px solid var(--secondary) !important;
+    background: var(--secondary) !important;
+}
+
+.base {
+    width: 40px;
+}
+
+#base90, #base36 {
+    width: 230px;
+    padding: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    .settings-buttons {
+        display: block;
+    }
+}
