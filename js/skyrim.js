@@ -1,3 +1,17 @@
+document.getElementById("extra").style.display = "none";
+
+function toggleExtra() {
+    var section = document.getElementById("extra");
+	if (section.style.display === "none") {       
+		section.style.display = "block";
+		document.getElementById("extraButton").value = "Hide Extra";
+	}
+	else {
+		section.style.display = "none";
+		document.getElementById("extraButton").value = "Show Extra";
+	}
+}
+
 function rollDice(value){
     roll = Math.floor(Math.random() * (value) +1);
     return roll;
@@ -22,10 +36,14 @@ function rollType(type, i, a, b) {
 function rollSkill() {
     const textField = document.getElementById("skillsText");
     textField.value = "";
-    for (let i = 0; i < 6; i++) {        
+    for (let i = 0; i < 6; i++) {
         dice1 = rollDice(6);
-        dice2 = rollDice(6);       
-        textField.value += "Dice 1: "+dice1+" \t|\tDice 2: "+dice2+" \n";
+        dice2 = rollDice(6);
+        if (i == 5) {
+            textField.value += "Dice 1: "+dice1+" \t|\tDice 2: "+dice2;
+        } else {
+            textField.value += "Dice 1: "+dice1+" \t|\tDice 2: "+dice2+" \n";
+        }
         if (dice1 < 3) {
             const selCells = document.getElementsByClassName("mage");
             selCells[dice2].className = "mage selected";
@@ -132,11 +150,11 @@ function handToHand() {
     thief1 = document.getElementById("thiefLock");
     thief2 = document.getElementById("thiefPick");
     if (document.getElementById('hand').checked) 
-  {
-      thief1.innerHTML = "Hand to Hand";
-      thief2.innerHTML = "Security";
-  } else {
-      thief1.innerHTML = "Lockpicking";
-      thief2.innerHTML = "Pickpocket";
-  }
+    {
+        thief1.innerHTML = "Hand to Hand";
+        thief2.innerHTML = "Security";
+    } else {
+        thief1.innerHTML = "Lockpicking";
+        thief2.innerHTML = "Pickpocket";
+    }
 }

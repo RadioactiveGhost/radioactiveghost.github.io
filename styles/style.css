@@ -199,7 +199,7 @@ input[type=text] {
   border-top-right-radius: 4px;
   padding: 16px 12px 8px 16px;
   margin: 10px;
-  width: 70%;
+  width: 80%;
 }
 
 input[type=text]:not(:read-only):hover{
@@ -251,4 +251,24 @@ input[type=button]:hover {
 
 .night-mode input[type=button] {
   border-color: var(--primary-variant) !important;
+}
+
+textarea {
+  float:right;
+  margin: 10px;
+  padding: 16px;
+  border: solid 1px var(--primary-variant-2);
+  border-radius: 4px;
+  width: 250px;
+  resize: none;
+}
+
+textarea:read-only {
+  border: solid 1px var(--secondary);
+
+}
+
+.night-mode textarea {
+  background-color: var(--background-dark);
+  color: var(--font-dark);
 }

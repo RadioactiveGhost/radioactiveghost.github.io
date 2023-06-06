@@ -43,14 +43,7 @@ function toggleSection() {
 	}
 }
 
-function toggleDark() {
-	var body = document.body;
-	body.classList.toggle("night-mode");
-}
 
-/*input.onkeyup = function() {
-	toDecimal();
-}*/
 function convert() {
 	var input = document.getElementById("input").value;
 	var output = document.getElementById("output");

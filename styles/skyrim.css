@@ -10,11 +10,20 @@ table {
     font-size: small;
 }
 
+.night-mode table{
+    background-color: var(--background-dark);
+    border-color: #222;
+}
+
 td {
     border-top: 1px solid var(--font-dark);
     margin:0;
     padding: 6px 16px 8px 16px;
     height: 52;
+}
+
+.night-mode td{
+    border-top: 1px solid #222;    
 }
 
 th {
@@ -27,6 +36,12 @@ th {
 
 
 
+
+td.dice, th.dice{
+    width: 20px;
+}
+
+
 .diceButton {
     background: var(--secondary-variant);
     width: fit-content;
@@ -34,4 +49,45 @@ th {
     padding: 6px;
     border-radius: 4px;
     margin: 6px;
+}
+
+.night-mode .diceButton {
+    background-color: var(--secondary) !important;
+}
+
+input[type="text"] {
+    float: right;
+    margin-right: 0;
+    width: 190px;
+}
+
+.selected {
+    background-color: var(--secondary-variant) !important;
+}
+
+.night-mode .selected {
+    background-color: var(--secondary) !important;
+}
+
+#skillsText {
+    width: 220px !important;
+    height: 120px !important;
+    margin-right: 0;
+}
+
+p {
+    padding: 0 100px;
+}
+
+#ytLink {
+    color: var(--error);
+    text-decoration: none;
+} 
+#ytLink:visited {
+    color: var(primary);
+    text-decoration: none;
+}
+
+i.fa-youtube {
+    text-indent: 0 !important;
 }
