@@ -272,3 +272,53 @@ textarea:read-only {
   background-color: var(--background-dark);
   color: var(--font-dark);
 }
+
+
+/*
+
+    --------------------------
+
+*/
+
+
+
+/*
+
+    Tables
+
+*/
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid var(--font-dark);
+  border-radius: 4px;
+  background-color: #fff;
+  padding:0;
+  table-layout: fixed;
+  font-size: small;
+}
+
+.night-mode table{
+  background-color: var(--background-dark);
+  border-color: #222;
+}
+
+td {
+  border-top: 1px solid var(--font-dark);
+  margin:0;
+  padding: 6px 16px 8px 16px;
+  height: 38px;
+}
+
+.night-mode td{
+  border-top: 1px solid #222;    
+}
+
+th {
+  padding-left: 16px;
+  padding-right: 16px;
+  height: 56px;
+  text-align: left;
+}

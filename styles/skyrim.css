@@ -1,42 +1,3 @@
-table {
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 0;
-    border: 1px solid var(--font-dark);
-    border-radius: 4px;
-    background-color: #fff;
-    padding:0;
-    table-layout: fixed;
-    font-size: small;
-}
-
-.night-mode table{
-    background-color: var(--background-dark);
-    border-color: #222;
-}
-
-td {
-    border-top: 1px solid var(--font-dark);
-    margin:0;
-    padding: 6px 16px 8px 16px;
-    height: 52;
-}
-
-.night-mode td{
-    border-top: 1px solid #222;    
-}
-
-th {
-    padding-left: 16px;
-    padding-right: 16px;
-    height: 56px;
-    text-align: left;
-}
-
-
-
-
-
 td.dice, th.dice{
     width: 20px;
 }
@@ -49,6 +10,22 @@ td.dice, th.dice{
     padding: 6px;
     border-radius: 4px;
     margin: 6px;
+    vertical-align: auto;
+    user-select: none;
+}
+
+.diceButton:hover {
+    cursor: pointer;
+    filter: brightness(110%);
+}
+
+.diceButton:active {
+    filter: brightness(130%);    
+}
+
+.diceButton i {
+    font-size: medium;
+    margin-right: 6px;
 }
 
 .night-mode .diceButton {
@@ -90,4 +67,9 @@ p {
 
 i.fa-youtube {
     text-indent: 0 !important;
+}
+
+i.outgoing {
+    margin-left: 4px;
+    font-size: x-small;
 }
